@@ -1,0 +1,4 @@
+/spark
+/sparkc
+/spark help
+/spark gcmonitor
