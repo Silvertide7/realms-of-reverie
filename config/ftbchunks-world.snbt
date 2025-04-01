@@ -27,7 +27,7 @@
 	# Setting this to 0 disables long-range tracking.
 	# Default: 20
 	# Range: 0 ~ 2147483647
-	long_range_tracker_interval: 20
+	long_range_tracker_interval: 0
 	
 	# Requires you to claim chunks in order to edit and interact with blocks
 	# Default: false
@@ -49,7 +49,7 @@
 	# Should PvP combat be allowed in claimed chunks? Default is ALWAYS; NEVER prevents it in all claimed chunks; PER_TEAM allows teams to decide if PvP is allowed in their claims
 	# Default: "always"
 	# Valid values: "always", "never", "per_team"
-	pvp_mode: "always"
+	pvp_mode: "per_team"
 	
 	# If true, the player must have the 'ftbchunks_mapping' Game stage to be able to use the map and minimap.
 	# Requires KubeJS and/or Gamestages to be installed.
