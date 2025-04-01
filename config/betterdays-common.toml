@@ -3,12 +3,12 @@
 	#Day is defined as any time between dayStart (see below) and nightStart (see below) the next day.
 	#Vanilla speed: 1.0
 	#Range: 0.0 ~ 24000.0
-	daySpeed = 1.0
+	daySpeed = 0.33
 	#The speed at which time passes during the night.
 	#Night is defined as any time between dayStart (see below) and nightStart (see below).
 	#Vanilla speed: 1.0
 	#Range: 0.0 ~ 24000.0
-	nightSpeed = 1.0
+	nightSpeed = 0.33
 	#The time to start day. This is configurable within the time the sun appears and day starts.
 	#Default: 23500
 	#Range: 22300.0 ~ 24000.0
@@ -24,7 +24,7 @@
 		#When set to SLEEPING, this effect only applies when at least one player is sleeping in a dimension.
 		#Note: This setting is not applicable if game rule doWeatherCycle is false.
 		#Allowed Values: NEVER, ALWAYS, SLEEPING
-		weatherEffect = "SLEEPING"
+		weatherEffect = "ALWAYS"
 		#When applied, this effect syncs the random tick speed with the current speed of time, forcing
 		#crop, tree, and grass growth to occur at baseRandomTickSpeed multiplied by the current time-speed.
 		#When set to SLEEPING, randomTickSpeed is set to baseRandomTickSpeed unless at least one player is sleeping in a dimension.
@@ -35,7 +35,7 @@
 		randomTickEffect = "NEVER"
 		#The base random tick speed used by the randomTickEffect time effect.
 		#Range: > 0
-		baseRandomTickSpeed = 3
+		baseRandomTickSpeed = 2
 		#When applied, this effect progresses potion effects to match the rate of the current time-speed.
 		#This effect does not apply if time speed is 1.0 or less.
 		#THIS MAY HAVE A NEGATIVE IMPACT ON PERFORMANCE IN SERVERS WITH MANY PLAYERS.
@@ -65,7 +65,7 @@
 	#The maximum speed at which time passes when all players are sleeping.
 	#A value of 110 is nearly equal to the time it takes to sleep in vanilla.
 	#Range: 0.0 ~ 24000.0
-	sleepSpeedMax = 110.0
+	sleepSpeedMax = 20.0
 	#The minimum speed at which time passes when only 1 player is sleeping in a full server.
 	#Range: 0.0 ~ 24000.0
 	sleepSpeedMin = 1.0
