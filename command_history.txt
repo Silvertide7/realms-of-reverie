@@ -2,3 +2,5 @@
 /sparkc
 /spark help
 /spark gcmonitor
+/ftbchunks claim 1
+/ftbchunks waypoint add here ~ ~ ~ minecraft:overworld

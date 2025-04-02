@@ -54,7 +54,7 @@
 	# If true, the player must have the 'ftbchunks_mapping' Game stage to be able to use the map and minimap.
 	# Requires KubeJS and/or Gamestages to be installed.
 	# Default: false
-	require_game_stage: false
+	require_game_stage: true
 	claiming: {
 		# Dimension ID's where chunks may not be claimed. Add "minecraft:the_end" to this list if you want to disable chunk claiming in The End, or "othermod:*" to disable chunk claiming in *all* dimensions added by "othermod"
 		# Default: []
@@ -67,13 +67,13 @@
 		# Hard limit for the number of chunks a team can claim, regardless of how many members. Default of 0 means no hard limit.
 		# Default: 0
 		# Range: 0 ~ 2147483647
-		hard_team_claim_limit: 0
+		hard_team_claim_limit: 200
 		
 		# Max claimed chunks.
 		# You can override this with FTB Ranks 'ftbchunks.max_claimed' permission
 		# Default: 500
 		# Range: -∞ ~ +∞
-		max_claimed_chunks: 12
+		max_claimed_chunks: 4
 		
 		# Maximum time (in real-world days) where if no player in a team logs in, the team automatically loses their claims.
 		# Prevents chunks being claimed indefinitely by teams who no longer play.
@@ -89,7 +89,7 @@
 		# AVERAGE: use the average of all members' limits.
 		# Default: "largest"
 		# Valid values: "largest", "owner", "sum", "average"
-		party_limit_mode: "largest"
+		party_limit_mode: "sum"
 	}
 	dev: {
 		# Enable dev commands
