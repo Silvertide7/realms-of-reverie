@@ -41,15 +41,15 @@
 [breaking]
 	#configuration options for breaking containers
 	#prevent the destruction of Lootr chests except while sneaking in creative mode
-	disable_break = false
+	disable_break = true
 	#allow the destruction of Lootr chests regardless. overrides `disable_break`
 	enable_break = false
 	#allows fake players to destroy Lootr chests without having to sneak, overrides the `disable_break` option for fake players
 	enable_fake_player_break = false
 	#lootr chests cannot be destroyed by creeper or TNT explosions
-	blast_resistant = false
+	blast_resistant = true
 	#lootr chests cannot be destroyed by any explosion
-	blast_immune = false
+	blast_immune = true
 	#lootr chests will drop the contents of the player-specific inventory (generated when not generated) when broken
 	should_drop_player_loot = false
 
