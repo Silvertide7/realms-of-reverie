@@ -4,3 +4,7 @@
 /spark gcmonitor
 /ftbchunks claim 1
 /ftbchunks waypoint add here ~ ~ ~ minecraft:overworld
+/season set mid_winter
+/season set late_winter
+/season set mid_winter
+/weather rain

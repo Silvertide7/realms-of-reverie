@@ -1,0 +1,98 @@
+#Player is knocked back by attacks which do not cause any damage, such as when hit by snowballs, eggs, and fishing rod hooks.
+#Default Value: true
+weak_attacks_knock_back_players = true
+#Force all entity hitboxes to have a cubic size of at least 0.9 blocks, making them easier to hit and shoot at.
+#This only affects targeting an entity, no collisions or whatsoever. Useful for hitting e.g. bats, rabbits, silverfish, fish, and most baby animals.
+#Default Value: true
+min_hitbox_size = false
+#Makes knockback stronger towards targets not on the ground (does not apply when in water).
+#Default Value: true
+upwards_knockback = true
+#Health regenerates every 2 seconds, which requires more than 6 food points. Also food points will be directly consumed when healing. Surplus saturation does not yield quick health regeneration.
+#Default Value: false
+balanced_food_mechanics = false
+#Sprinting and attacking no longer interfere with each other, making critical hits possible at all times.
+#Default Value: true
+critical_hits_while_sprinting = true
+#Expand all entity hitboxes by 10%, making hitting a target possible from a slightly greater range and with much increased accuracy.
+#Default Value: true
+inflate_hitboxes = false
+#Attacking will no longer stop the player from sprinting. Very useful when swimming, so you can fight underwater without being stopped on every hit.
+#Default Value: true
+sprint_attacks = true
+#Disables damage immunity when hit by a projectile. Makes it possible for entities to be hit by multiple projectiles at once (useful for the multishot enchantment).
+#Default Value: true
+no_projectile_immunity = true
+
+[shield]
+	#Shields knock back attackers (see MC-147694).
+	#NONE: Vanilla behavior, no knockback is dealt to attackers.
+	#CONSTANT: Always the same knockback is dealth to attackers.
+	#VARIABLE: The knockback strength is greater the more precisely the shield block is timed in regards to the attack.
+	#Default Value: VARIABLE
+	#Allowed Values: NONE, CONSTANT, VARIABLE
+	shield_knockback = "VARIABLE"
+	#Amount of ticks after starting to block in which an attacker will be knocked back further than usual when "shield_knockback" is set to VARIABLE.
+	#Default Value: 20
+	# Default: 20
+	# Range: > 0
+	variable_shield_knockback_delay = 20
+	#Skip 5 tick warm-up delay when activating a shield, so they become effective instantly.
+	#Default Value: true
+	remove_shield_delay = true
+	#Arc of available protection depending on what angle the attack is coming from and where the player is looking (means the lower this angle the closer you need to be facing your attacker).
+	#Vanilla protection arc is 180 degrees, which has been reduced to around 100 in combat tests.
+	#This does not change the protection arc for projectiles which remains at 180 degress.
+	#Default Value: 100.0
+	# Default: 100.0
+	# Range: 0.0 ~ 360.0
+	shield_protection_arc = 100.0
+
+[items]
+	#It only takes 20 ticks to drink liquid foods (such as potions, milk, and bottled liquids) instead of 32 or 40.
+	#Default Value: true
+	fast_drinking = false
+	#Only damages axes by 1 durability instead of 2 when attacking so they properly be used as weapons.
+	#Default Value: true
+	no_axe_attack_penalty = true
+	#Add a delay of 4 ticks between throwing snowballs or eggs, just like with ender pearls.
+	#Default Value: true
+	throwables_delay = true
+	#Eating and drinking both are interrupted if the player is damaged.
+	#Default Value: true
+	eating_interruption = true
+
+[cooldown]
+	#Disable attacking when attack cooldown is below a certain percentage.
+	#Setting this to 0.0 means attacking is possible with any strength as in vanilla.
+	#Default Value: 1.0
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	min_attack_strength = 1.0
+	#Holding down the attack button keeps attacking continuously. No more spam clicking required.
+	#Default Value: false
+	hold_attack_button = false
+	#Delay in ticks between attacks when holding the attack button is enabled.
+	#This basically also puts a cap on the max spam clicking speed.
+	#Default Value: 5
+	# Default: 5
+	# Range: > 0
+	hold_attack_button_delay = 5
+	#Attack cooldown is unaffected by switching hotbar items.
+	#Default Value: true
+	fast_switching = true
+	#Melee attacks that don't hit a target won't trigger the attack cooldown.
+	#Default Value: false
+	retain_energy_on_miss = false
+
+[sweeping]
+	#Is the sweeping edge enchantment required to perform a sweep attack.
+	#Default Value: true
+	require_sweeping_edge = true
+	#Allow sweep attack without hitting mobs, just by attacking air basically.
+	#This attack will not work when the attack button is held for continuous attacking.
+	#Default Value: true
+	air_sweep_attack = true
+	#Do not perform sweep attacks when sneaking.
+	#Default Value: false
+	no_sweeping_when_sneaking = false
