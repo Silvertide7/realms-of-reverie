@@ -8,3 +8,5 @@
 /season set late_winter
 /season set mid_winter
 /weather rain
+/effect give Silvertide7 minecraft:night_vision 30
+/time set night
