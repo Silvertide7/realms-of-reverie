@@ -25,6 +25,8 @@ TrashSlotSaveState.json
 *.log
 *.tmp
 *.dylib
+*.env
+.env
 
 rhino.local.properties
 *.DS_Store
