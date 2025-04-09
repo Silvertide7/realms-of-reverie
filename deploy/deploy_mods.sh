@@ -15,7 +15,7 @@ if [ -z ${SFTP_PASS+x} ]; then
     exit 1  
 fi
 
-echo "Deleting .jar files on the remote server"
+echo "Deleting .jar files on the remote server."
 sshpass -p "$SFTP_PASS" ssh -p $SFTP_PORT $SFTP_USER@$SFTP_HOST "rm -f mods/*.jar"
 
 if [ $? -eq 0 ]; then
@@ -25,7 +25,7 @@ else
     exit $?
 fi
 
-echo "Uploading local mods to mod folder"
+echo "Uploading local mods to mod folder."
 sshpass -p "$SFTP_PASS" scp -P $SFTP_PORT ../mods/*.jar $SFTP_USER@$SFTP_HOST:mods/
 
 if [ $? -eq 0 ] || [ $? -eq 1 ]; then
