@@ -8,11 +8,14 @@ SFTP_HOST="192.168.68.103"
 SFTP_PORT="2224"
 SFTP_USER="update"
 
-echo "Please enter password:"
-read SFTP_PASS
+source deploy.env
+
+if [ -z ${SFTP_PASS+x} ]; then
+    echo "Could not find SFTP_PASS in deploy.env"
+    exit 1  
+fi
 
 echo "Deleting .jar files on the remote server"
-
 sshpass -p "$SFTP_PASS" ssh -p $SFTP_PORT $SFTP_USER@$SFTP_HOST "rm -f mods/*.jar"
 
 if [ $? -eq 0 ]; then
@@ -24,6 +27,7 @@ fi
 
 echo "Uploading local mods to mod folder"
 sshpass -p "$SFTP_PASS" scp -P $SFTP_PORT ../mods/*.jar $SFTP_USER@$SFTP_HOST:mods/
+
 if [ $? -eq 0 ] || [ $? -eq 1 ]; then
     echo "Successfully uploaded mod .jar files."
 else

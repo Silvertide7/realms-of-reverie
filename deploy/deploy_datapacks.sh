@@ -8,8 +8,12 @@ SFTP_HOST="192.168.68.103"
 SFTP_PORT="2224"
 SFTP_USER="update"
 
-echo "Please enter password:"
-read SFTP_PASS
+source deploy.env
+
+if [ -z ${SFTP_PASS+x} ]; then
+    echo "Could not find SFTP_PASS in deploy.env"
+    exit 1  
+fi
 
 echo "Deleting configs on the remote server"
 
