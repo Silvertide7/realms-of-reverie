@@ -27,7 +27,7 @@ else
 fi
 
 echo "Uploading local configs to config folder"
-sshpass -p "$SFTP_PASS" scp -P $SFTP_PORT ../required_data/* $SFTP_USER@$SFTP_HOST:world/datapacks/
+sshpass -p "$SFTP_PASS" scp -P $SFTP_PORT ../global_packs/required_data/* $SFTP_USER@$SFTP_HOST:world/datapacks/
 if [ $? -eq 0 ] || [ $? -eq 1 ]; then
     echo "Successfully uploaded configs."
 else
