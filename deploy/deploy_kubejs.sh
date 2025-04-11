@@ -15,22 +15,22 @@ if [ -z ${SFTP_PASS+x} ]; then
     exit 1  
 fi
 
-echo "Deleting configs on the remote server"
+echo "Deleting kubejs scripts on the remote server"
 
-sshpass -p "$SFTP_PASS" ssh -p $SFTP_PORT $SFTP_USER@$SFTP_HOST "rm -f world/datapacks/*"
+sshpass -p "$SFTP_PASS" ssh -p $SFTP_PORT $SFTP_USER@$SFTP_HOST "rm -rf kubejs/*"
 
 if [ $? -eq 0 ]; then
-    echo "All configs have been removed."
+    echo "All kubejs script have been removed."
 else
-    echo "Failed to delete configs."
+    echo "Failed to delete kubejs scripts."
     exit $?
 fi
 
-echo "Uploading local configs to config folder"
-sshpass -p "$SFTP_PASS" scp -P $SFTP_PORT ../global_packs/required_data/* $SFTP_USER@$SFTP_HOST:world/datapacks/
+echo "Uploading local kubejs scripts"
+sshpass -p "$SFTP_PASS" scp -P $SFTP_PORT -r ../kubejs/* $SFTP_USER@$SFTP_HOST:kubejs/
 if [ $? -eq 0 ] || [ $? -eq 1 ]; then
-    echo "Successfully uploaded configs."
+    echo "Successfully uploaded kubejs scripts."
 else
-    echo "Failed to upload configs."
+    echo "Failed to upload kubejs scripts."
     exit $?
 fi

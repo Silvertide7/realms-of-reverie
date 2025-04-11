@@ -15,18 +15,18 @@ if [ -z ${SFTP_PASS+x} ]; then
     exit 1 
 fi
 
-echo "Deploying configs to server."
+echo "Removing configs on server."
 
-sshpass -p "$SFTP_PASS" ssh -p $SFTP_PORT $SFTP_USER@$SFTP_HOST "rm -f config/*"
+sshpass -p "$SFTP_PASS" ssh -p $SFTP_PORT $SFTP_USER@$SFTP_HOST "rm -rf config/*"
 
 if [ $? -eq 0 ]; then
     echo "All configs have been removed."
 else
-    echo "Failed to delete configs."
+    echo "Failed to remove configs."
     exit $?
 fi
 
-echo "Uploading local configs to config folder"
+echo "Uploading local configs to server."
 sshpass -p "$SFTP_PASS" scp -P $SFTP_PORT -r ../config/* $SFTP_USER@$SFTP_HOST:config/
 if [ $? -eq 0 ] || [ $? -eq 1 ]; then
     echo "Successfully uploaded configs."
