@@ -1,3 +1,4 @@
+#noload
 import crafttweaker.api.entity.attribute.AttributeOperation;
 
 public class AttributeUtil {
@@ -128,11 +129,12 @@ public class AttributeUtil {
       AttributeUtil.swimSpeed: "746a4e79-b6ca-423d-aa22-1b07c53efe54",
       AttributeUtil.spellResist: "b890614c-dd46-4466-a8ac-07d95c7e6db6"
     };
-    <item:${resourceName}>.anyDamage().addGlobalAttributeModifier(<attribute:${attributeName}>, attributeUUIDMapMain[attributeName], attributeDescMap[attributeName], value, <constant:minecraft:attribute/operation:add_value>, [<constant:minecraft:equipmentslot:mainhand>]);
+
+    <item:${resourceName}>.addGlobalAttributeModifier(<attribute:${attributeName}>, attributeUUIDMapMain[attributeName], attributeDescMap[attributeName], value, <constant:minecraft:attribute/operation:add_value>, [<constant:minecraft:equipmentslot:mainhand>]);
   }
 
     public static replaceMainHandAttr_addition(resourceName as string, attrUUID as string, attrDesc as string, attributeName as string, value as double) as void {
-    <item:${resourceName}>.anyDamage().addGlobalAttributeModifier(<attribute:${attributeName}>, attrUUID, attrDesc, value, <constant:minecraft:attribute/operation:add_value>, [<constant:minecraft:equipmentslot:mainhand>]);
+    <item:${resourceName}>.addGlobalAttributeModifier(<attribute:${attributeName}>, attrUUID, attrDesc, value, <constant:minecraft:attribute/operation:add_value>, [<constant:minecraft:equipmentslot:mainhand>]);
   }
 
   public static setOffHandAttr_addition(resourceName as string, attributeName as string, value as double) as void {
@@ -164,7 +166,7 @@ public class AttributeUtil {
       AttributeUtil.swimSpeed: "9c4f3ecc-8dff-4216-91ac-42430c16105d",
       AttributeUtil.spellResist: "462f2d73-be39-45d0-8d52-f27e3b772276"
     };
-    <item:${resourceName}>.anyDamage().addGlobalAttributeModifier(<attribute:${attributeName}>, attributeUUIDMapOffhand[attributeName], attributeDescMap[attributeName], value, <constant:minecraft:attribute/operation:add_value>, [<constant:minecraft:equipmentslot:offhand>]);
+    <item:${resourceName}>.addGlobalAttributeModifier(<attribute:${attributeName}>, attributeUUIDMapOffhand[attributeName], attributeDescMap[attributeName], value, <constant:minecraft:attribute/operation:add_value>, [<constant:minecraft:equipmentslot:offhand>]);
   }
 
     public static setOffHandAttr_multiplyBase(resourceName as string, attributeName as string, value as double) as void {
@@ -196,7 +198,7 @@ public class AttributeUtil {
       AttributeUtil.swimSpeed: "9c4f3ecc-8dff-4216-91ac-42430c16105d",
       AttributeUtil.spellResist: "462f2d73-be39-45d0-8d52-f27e3b772276"
     };
-    <item:${resourceName}>.anyDamage().addGlobalAttributeModifier(<attribute:${attributeName}>, attributeUUIDMapOffhand[attributeName], attributeDescMap[attributeName], value, <constant:minecraft:attribute/operation:add_multiplied_base>, [<constant:minecraft:equipmentslot:offhand>]);
+    <item:${resourceName}>.addGlobalAttributeModifier(<attribute:${attributeName}>, attributeUUIDMapOffhand[attributeName], attributeDescMap[attributeName], value, <constant:minecraft:attribute/operation:add_multiplied_base>, [<constant:minecraft:equipmentslot:offhand>]);
   }
 
   public static setBothHandAttr_addition(resourceName as string, attributeName as string, value as double) as void {
@@ -205,11 +207,11 @@ public class AttributeUtil {
   }
 
   public static replaceMainHandAttr_addition(resourceName as string, attributeName as string, attrUUID as string, value as double) as void {
-    <item:${resourceName}>.anyDamage().addGlobalAttributeModifier(<attribute:${attributeName}>, attrUUID, attributeDescMap[attributeName], value, <constant:minecraft:attribute/operation:add_value>, [<constant:minecraft:equipmentslot:mainhand>]);
+    <item:${resourceName}>.addGlobalAttributeModifier(<attribute:${attributeName}>, attrUUID, attributeDescMap[attributeName], value, <constant:minecraft:attribute/operation:add_value>, [<constant:minecraft:equipmentslot:mainhand>]);
   }
   
   public static replaceOffHandAttr_addition(resourceName as string, attributeName as string, attrUUID as string, value as double) as void {
-    <item:${resourceName}>.anyDamage().addGlobalAttributeModifier(<attribute:${attributeName}>, attrUUID, attributeDescMap[attributeName], value, <constant:minecraft:attribute/operation:add_value>, [<constant:minecraft:equipmentslot:offhand>]);
+    <item:${resourceName}>.addGlobalAttributeModifier(<attribute:${attributeName}>, attrUUID, attributeDescMap[attributeName], value, <constant:minecraft:attribute/operation:add_value>, [<constant:minecraft:equipmentslot:offhand>]);
   }
 
   // ARMOR ATTRIBUTES -------------------------------------------------------
@@ -227,7 +229,7 @@ public class AttributeUtil {
   }
 
   public static setHelmetAttr(helmet as string, attributeName as string, value as double, operation as AttributeOperation) as void {
-    <item:${helmet}>.anyDamage().addGlobalAttributeModifier(<attribute:${attributeName}>, "2ad3f246-fee1-4e67-b886-69fd380bb150", attributeDescMap[attributeName], value, operation, [<constant:minecraft:equipmentslot:head>]);
+    <item:${helmet}>.addGlobalAttributeModifier(<attribute:${attributeName}>, "2ad3f246-fee1-4e67-b886-69fd380bb150", attributeDescMap[attributeName], value, operation, [<constant:minecraft:equipmentslot:head>]);
   }
   
   // CHEST
@@ -244,7 +246,7 @@ public class AttributeUtil {
   }
 
   public static setChestAttr(chest as string, attributeName as string, value as double, operation as AttributeOperation) as void {
-    <item:${chest}>.anyDamage().addGlobalAttributeModifier(<attribute:${attributeName}>, "9f3d476d-c118-4544-8365-64846904b48e", attributeDescMap[attributeName], value, operation, [<constant:minecraft:equipmentslot:chest>]);
+    <item:${chest}>.addGlobalAttributeModifier(<attribute:${attributeName}>, "9f3d476d-c118-4544-8365-64846904b48e", attributeDescMap[attributeName], value, operation, [<constant:minecraft:equipmentslot:chest>]);
   }
 
   // LEGS
@@ -261,7 +263,7 @@ public class AttributeUtil {
   }
 
   public static setLeggingsAttr(leggings as string, attributeName as string, value as double, operation as AttributeOperation) as void {
-    <item:${leggings}>.anyDamage().addGlobalAttributeModifier(<attribute:${attributeName}>, "d8499b04-0e66-4726-ab29-64469d734e0d", attributeDescMap[attributeName], value, operation, [<constant:minecraft:equipmentslot:legs>]);
+    <item:${leggings}>.addGlobalAttributeModifier(<attribute:${attributeName}>, "d8499b04-0e66-4726-ab29-64469d734e0d", attributeDescMap[attributeName], value, operation, [<constant:minecraft:equipmentslot:legs>]);
   }
 
   // BOOTS
@@ -278,7 +280,7 @@ public class AttributeUtil {
   }
 
   public static setFeetAttr(feet as string, attributeName as string, value as double, operation as AttributeOperation) as void {
-    <item:${feet}>.anyDamage().addGlobalAttributeModifier(<attribute:${attributeName}>, "845db27c-c624-495f-8c9f-6020a9a58b6b", attributeDescMap[attributeName], value, operation, [<constant:minecraft:equipmentslot:feet>]);
+    <item:${feet}>.addGlobalAttributeModifier(<attribute:${attributeName}>, "845db27c-c624-495f-8c9f-6020a9a58b6b", attributeDescMap[attributeName], value, operation, [<constant:minecraft:equipmentslot:feet>]);
   }
 
 }

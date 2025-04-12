@@ -1,0 +1,303 @@
+WITH config(skills)
+// ----- ATTRIBUTES -----
+
+    set(strength)
+        .icon(minecraft:textures/mob_effect/strength.png)
+        .color(255);
+    set(dexterity)
+        .icon(minecraft:textures/mob_effect/speed.png)
+        .color(255);
+    set(constitution)
+        .icon(minecraft:textures/mob_effect/regeneration.png)
+        .color(255);
+    set(intelligence)
+        .icon(minecraft:textures/item/enchanted_book.png)
+        .color(255);
+    set(wisdom)
+        .icon(irons_spellbooks:textures/mob_effect/oakskin.png)
+        .color(255);
+    set(charisma)
+        .icon(minecraft:textures/mob_effect/hero_of_the_village.png)
+        .color(255);
+
+// ----- SKILLS -----
+
+    set(acrobatics)
+        .icon(minecraft:textures/mob_effect/strength.png)
+        .color(255);
+    set(acrobatics_group)
+        .groupFor(dexterity,0.3,acrobatics,0.7);
+
+    set(swimming)
+        .icon(minecraft:textures/mob_effect/dolphins_grace.png)
+        .color(255);
+    set(swimming_group)
+        .groupFor(constitution,0.25,swimming,0.75);
+    
+    set(excavation)
+        .icon(minecraft:textures/item/iron_shovel.png)
+        .color(255);
+    set(excavation_group)
+        .groupFor(strength, 0.75, constitution, 0.25, excavation, 3.0);
+
+    set(mining)
+        .icon(minecraft:textures/item/iron_pickaxe.png)
+        .color(255);
+    set(mining_group)
+        .groupFor(strength, 0.5, dexterity, 0.5, mining, 3.0);
+
+    set(woodcutting)
+        .icon(minecraft:textures/item/iron_axe.png)
+        .color(255);
+    set(woodcutting_group)
+        .groupFor(strength, 0.25, constitution, 0.75, woodcutting, 3.0);
+
+    set(arcana)
+        .icon(irons_spellbooks:textures/item/pyromancer_helmet.png)
+        .color(255);
+    set(arcana_group)
+        .groupFor(intelligence, 0.25, arcana, 0.75);
+
+    set(fishing)
+        .icon(minecraft:textures/item/fishing_rod.png)
+        .color(255);
+    set(fishing_group)
+        .groupFor(wisdom, 0.25, fishing, 0.75);
+
+    set(alchemy)
+        .icon(minecraft:textures/item/potion.png)
+        .color(255);
+    set(alchemy_group)
+        .groupFor(intelligence, 1.0, alchemy, 1.0);
+
+    set(smithing)
+        .icon(pmmo:textures/skills/smithing.png)
+        .iconSize(34)
+        .color(255);
+    set(smithing_group)
+        .groupFor(intelligence, 0.5, strength, 0.5, smithing, 1.0);
+
+    set(husbandry)
+        .icon(minecraft:textures/item/lead.png)
+        .color(255);
+    set(husbandry_group)
+        .groupFor(charisma, 0.5, husbandry, 0.5);
+
+    set(farming)
+        .icon(minecraft:textures/item/wheat.png)
+        .color(255);
+    set(farming_group)
+        .groupFor(wisdom, 0.25, farming, 0.75);
+
+    set(cooking)
+        .icon(minecraft:textures/item/cooked_mutton.png)
+        .color(255);
+    set(cooking_group)
+        .groupFor(intelligence, 0.25, cooking, 0.75);
+
+// ----- MELEE WEAPONS -----
+
+    set(chakram)
+        .icon(simplyswords:textures/item/diamond_chakram.png)
+        .iconSize(34)
+        .color(255);
+    set(chakram_group)
+        .groupFor(intelligence, 0.25, chakram, 0.75);
+
+    set(claymore)
+        .icon(simplyswords:textures/item/diamond_claymore.png)
+        .iconSize(34)
+        .color(255);
+    set(claymore_group)
+        .groupFor(dexterity, 0.25, claymore, 0.75);
+
+    set(cutlass)
+        .icon(simplyswords:textures/item/diamond_cutlass.png)
+        .iconSize(34)
+        .color(255);
+    set(cutlass_group)
+        .groupFor(dexterity, 0.25, cutlass, 0.75);
+
+    set(glaive)
+        .icon(simplyswords:textures/item/diamond_glaive.png)
+        .iconSize(34)
+        .color(255);
+    set(glaive_group)
+        .groupFor(dexterity, 0.25, glaive, 0.75);
+
+    set(greataxe)
+        .icon(simplyswords:textures/item/diamond_greataxe.png)
+        .iconSize(34)
+        .color(255);
+    set(greataxe_group)
+        .groupFor(dexterity, 0.25, greataxe, 0.75);
+
+    set(greathammer)
+        .icon(simplyswords:textures/item/diamond_greathammer.png)
+        .iconSize(34)
+        .color(255);
+    set(greathammer_group)
+        .groupFor(dexterity, 0.25, greathammer, 0.75);
+
+    set(halberd)
+        .icon(simplyswords:textures/item/diamond_halberd.png)
+        .iconSize(34)
+        .color(255);
+    set(halberd_group)
+        .groupFor(dexterity, 0.25, halberd, 0.75);
+
+    set(katana)
+        .icon(simplyswords:textures/item/diamond_katana.png)
+        .iconSize(34)
+        .color(255);
+    set(katana_group)
+        .groupFor(dexterity, 0.25, katana, 0.75);
+
+    set(longsword)
+        .icon(simplyswords:textures/item/diamond_longsword.png)
+        .iconSize(34)
+        .color(255);
+    set(longsword_group)
+        .groupFor(dexterity, 0.25, longsword, 0.75);
+
+    set(rapier)
+        .icon(simplyswords:textures/item/diamond_rapier.png)
+        .iconSize(34)
+        .color(255);
+    set(rapier_group)
+        .groupFor(dexterity, 0.25, rapier, 0.75);
+
+    set(sai)
+        .icon(simplyswords:textures/item/diamond_sai.png)
+        .iconSize(34)
+        .color(255);
+    set(sai_group)
+        .groupFor(dexterity, 0.25, sai, 0.75);
+
+    set(scythe)
+        .icon(simplyswords:textures/item/diamond_scythe.png)
+        .iconSize(34)
+        .color(255);
+    set(scythe_group)
+        .groupFor(dexterity, 0.25, scythe, 0.75);
+
+    set(spear)
+        .icon(simplyswords:textures/item/diamond_spear.png)
+        .iconSize(34)
+        .color(255);
+    set(spear_group)
+        .groupFor(dexterity, 0.25, spear, 0.75);
+
+    set(twinblade)
+        .icon(simplyswords:textures/item/diamond_twinblade.png)
+        .iconSize(34)
+        .color(255);
+    set(twinblade_group)
+        .groupFor(dexterity, 0.25, twinblade, 0.75);
+
+    set(warglaive)
+        .icon(simplyswords:textures/item/diamond_warglaive.png)
+        .iconSize(34)
+        .color(255);
+    set(warglaive_group)
+        .groupFor(dexterity, 0.25, warglaive, 0.75);
+
+    set(shortsword)
+        .icon(minecraft:textures/item/diamond_sword.png)
+        .color(255);
+    set(sword_group)
+        .groupFor(dexterity, 0.25, sword, 0.75);
+
+// ----- RANGED WEAPONS -----
+
+    set(bow)
+        .icon(minecraft:textures/item/bow.png)
+        .color(255);
+    set(bow_group)
+        .groupFor(dexterity, 0.25, bow, 0.75);
+
+    set(crossbow)
+        .icon(minecraft:textures/item/crossbow.png)
+        .color(255);
+    set(crossbow_group)
+        .groupFor(strength, 0.25, crossbow, 0.75);
+
+// ----- DEFENSE -----
+
+    set(defense)
+        .icon(minecraft:textures/mob_effect/absorption.png)
+        .color(255);
+    set(defense_group)
+        .groupFor(constitution, 0.25, defense, 0.75);
+
+    set(warding)
+        .icon(irons_spellbooks:textures/mob_effect/fortify.png)
+        .color(255);
+    set(warding_group)
+        .groupFor(constitution, 0.15, warding, 0.75, arcana, 0.1);
+
+
+// ----- MAGIC SCHOOLS -----
+// -- INTELLIGENCE SCHOOLS --
+
+    set(lightning_magic)
+        .icon(irons_spellbooks:textures/item/lightning_rune.png)
+        .color(13266814);
+    set(lightning_magic_group)
+        .groupFor(intelligence, 0.5, lightning_magic, 1.0, arcana, 0.75);
+
+    set(ice_magic)
+        .icon(irons_spellbooks:textures/item/ice_rune.png)
+        .color(12366924);
+    set(ice_magic_group)
+        .groupFor(intelligence, 0.5, ice_magic, 1.0, arcana, 0.75);
+
+    set(ender_magic)
+        .icon(irons_spellbooks:textures/item/ender_rune.png)
+        .color(12366924);
+    set(ender_magic_group)
+        .groupFor(intelligence, 0.5, ender_magic, 1.0, arcana, 0.75);
+
+// -- CHARISMA SCHOOLS --
+
+    set(blood_magic)
+        .icon(irons_spellbooks:textures/item/blood_rune.png)
+        .color(10264806);
+    set(blood_magic_group)
+        .groupFor(charisma, 0.5, blood_magic, 1.0, arcana, 0.75);
+
+    set(fire_magic)
+        .icon(irons_spellbooks:textures/item/fire_rune.png)
+        .color(8499690);
+    set(fire_magic_group)
+        .groupFor(charisma, 0.5, fire_magic, 1.0, arcana, 0.75);
+
+    set(evocation_magic)
+        .icon(irons_spellbooks:textures/item/evocation_rune.png)
+        .color(12366924);
+    set(evocation_magic_group)
+        .groupFor(charisma, 0.5, evocation_magic, 1.0, arcana, 0.75);
+
+// -- WISDOM SCHOOLS --
+
+    set(nature_magic)
+        .icon(irons_spellbooks:textures/item/nature_rune.png)
+        .color(5028988);
+    set(nature_magic_group)
+        .groupFor(wisdom, 0.5, nature_magic, 1.0, arcana, 0.75);
+
+    set(holy_magic)
+        .icon(irons_spellbooks:textures/item/holy_rune.png)
+        .color(8499690);
+    set(holy_magic_group)
+        .groupFor(wisdom, 0.5, holy_magic, 1.0, arcana, 0.75);
+
+// -- SPECIAL SCHOOL --
+
+    set(eldritch_magic)
+        .icon(irons_spellbooks:textures/item/eldritch_manuscript.png)
+        .color(6575116);
+    set(eldritch_magic_group)
+        .groupFor(intelligence, 0.33, charisma, 0.33, wisdom, 0.33, eldritch_magic, 1.0, arcana, 0.75);
+
+END

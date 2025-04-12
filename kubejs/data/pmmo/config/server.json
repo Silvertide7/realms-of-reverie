@@ -6,68 +6,126 @@
       "HEALTH_INCREASE": {
         "wisdom": 10.0
       },
-      "BREATH_CHANGE": {
-        "swimming": 1.0
-      },
-      "SUBMERGED": {
-        "swimming_group": 1.0
-      },
+      "BREATH_CHANGE": {},
+      "SUBMERGED": {},
       "CROUCH_JUMP": {
-        "agility": 2.5
+        "acrobatics_group": 15.0
       },
       "SPRINTING": {
         "acrobatics_group": 55.0
       },
       "DIVING": {
-        "swimming": 1.0
+        "swimming_group": 90.0
       },
       "SWIM_SPRINTING": {
-        "swimming": 1.0
+        "swimming_group": 90.0
       },
       "SURFACING": {
-        "swimming": 1.0
+        "swimming_group": 50.0
       },
       "SWIMMING": {
-        "swimming": 1.0
+        "swimming_group": 50.0
       },
       "SPRINT_JUMP": {
-        "agility": 2.5
+        "acrobatics_group": 15.0
       },
       "HEALTH_DECREASE": {
         "constitution": 10.0
       },
       "JUMP": {
-        "agility": 2.5
+        "acrobatics_group": 15.0
       }
     },
     "damage": {
       "DEAL_DAMAGE": {
-        "minecraft:generic_kill": {
+        "minecraft:magic": {
+          "arcana": 20
         },
-        "minecraft:player_attack": {
+        "minecraft:indirect_magic": {
+          "arcana": 20
         },
-        "#pmmo:gun": {
+        "irons_spellbooks:fire_magic": {
+          "fire_magic_group": 40
         },
-        "#minecraft:is_projectile": {
+        "minecraft:on_fire": {
+          "fire_magic_group": 40
         },
-        "#pmmo:magic": {
+        "irons_spellbooks:fire_field": {
+          "fire_magic_group": 40
+        },
+        "irons_spellbooks:ice_magic": {
+          "ice_magic_group": 40
+        },
+        "irons_spellbooks:ender_magic": {
+          "ender_magic_group": 40
+        },
+        "irons_spellbooks:dragon_breath_pool": {
+          "ender_magic_group": 40
+        },
+        "irons_spellbooks:lightning_magic": {
+          "lightning_magic_group": 40
+        },
+        "irons_spellbooks:blood_magic": {
+          "blood_magic_group": 40
+        },
+        "irons_spellbooks:evocation_magic": {
+          "evocation_magic_group": 40
+        },
+        "minecraft:wither": {
+          "evocation_magic_group": 40
+        },
+        "irons_spellbooks:nature_magic": {
+          "nature_magic_group": 40
+        },
+        "irons_spellbooks:poison_cloud": {
+          "nature_magic_group": 40
+        },
+        "irons_spellbooks:holy_magic": {
+          "holy_magic_group": 40
+        },
+        "irons_spellbooks:eldritch_magic": {
+          "arcana": 40
         }
       },
       "RECEIVE_DAMAGE": {
         "minecraft:generic_kill": {
-          "endurance": 1
+          "constitution": 1
         },
         "#pmmo:impact": {
-          "endurance": 15
+          "constitution": 15
         },
         "#pmmo:environment": {
-          "endurance": 10
+          "constitution": 10
         },
         "#minecraft:is_projectile": {
-          "endurance": 15
+          "constitution": 15
         },
         "#pmmo:magic": {
-          "magic": 15
+          "warding_group": 20
+        },
+        "irons_spellbooks:fire_magic": {
+          "warding_group": 20
+        },
+        "irons_spellbooks:ice_magic": {
+          "warding_group": 20
+        },
+        "irons_spellbooks:ender_magic": {
+          "warding_group": 20
+        },
+        "irons_spellbooks:lightning_magic": {
+          "warding_group": 20
+        },
+        "irons_spellbooks:blood_magic": {
+          "warding_group": 20
+        },
+        "irons_spellbooks:evocation_magic": {
+          "warding_group": 20
+        },
+        "irons_spellbooks:nature_magic": {
+          "warding_group": 20
+        },
+        "irons_spellbooks:holy_magic": {
+          "warding_group": 20
         }
       }
     }
