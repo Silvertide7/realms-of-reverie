@@ -10,6 +10,9 @@ kubejs_example
 ct_dumps
 blueprints
 command_history.txt
+resourcepacks
+data
+user-prefs.json
 
 journeymap/data
 journeymap/icon
