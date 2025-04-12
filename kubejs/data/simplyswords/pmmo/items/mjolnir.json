@@ -1,0 +1,12 @@
+{
+  "dealt_damage_xp":{
+      "minecraft:player_attack":{
+          "melee_wisdom": 10
+      }
+  },
+  "negative_effect": {
+    "minecraft:weakness": 2,
+    "minecraft:slowness": 2
+  },
+  "override": true
+}

@@ -1,0 +1,40 @@
+{
+    "dealt_damage_xp": {
+        "minecraft:player_attack": {
+            "melee_wisdom": 10
+        }
+    },
+    "negative_effect": {
+      "minecraft:weakness": 2,
+      "minecraft:slowness": 2
+    },
+    "salvage": {
+        "minecraft:diamond": {
+            "salvageMax": 1,
+            "baseChance": 0.1,
+            "maxChance": 0.8,
+            "chancePerLevel": {
+                "smithing": 0.05
+            },
+            "levelReq": {
+                "smithing": 5
+            },
+            "xpPerItem": {
+                "smithing_group": 300
+            }
+        },
+        "minecraft:stick": {
+            "salvageMax": 1,
+            "baseChance": 0.3,
+            "maxChance": 0.8,
+            "chancePerLevel": {
+                "smithing": 0.05
+            },
+            "levelReq": {},
+            "xpPerItem": {
+                "smithing_group": 10
+            }
+        }
+    },
+    "override": true
+}

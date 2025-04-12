@@ -1,0 +1,83 @@
+{
+    "dealt_damage_xp": {
+        "minecraft:player_attack": {
+            "melee_strength": 10
+        }
+    },
+    "negative_effect": {
+      "minecraft:weakness": 2,
+      "minecraft:slowness": 2,
+      "minecraft:poison": 2
+    },
+    "salvage": {
+        "simplyswords:runic_tablet": {
+            "salvageMax": 1,
+            "baseChance": 0,
+            "maxChance": 0.1,
+            "chancePerLevel": {
+                "smithing": 0.005
+            },
+            "levelReq": {
+                "smithing": 9
+            },
+            "xpPerItem": {
+                "smithing_group": 10000
+            }
+        },
+        "minecraft:netherite_ingot": {
+            "salvageMax": 1,
+            "baseChance": 0,
+            "maxChance": 0.5,
+            "chancePerLevel": {
+                "smithing": 0.025
+            },
+            "levelReq": {
+                "smithing": 7
+            },
+            "xpPerItem": {
+                "smithing_group": 5000
+            }
+        },
+        "minecraft:diamond": {
+            "salvageMax": 2,
+            "baseChance": 0.1,
+            "maxChance": 0.8,
+            "chancePerLevel": {
+                "smithing": 0.05
+            },
+            "levelReq": {
+                "smithing": 5
+            },
+            "xpPerItem": {
+                "smithing_group": 1000
+            }
+        },
+        "minecraft:iron_nugget": {
+            "salvageMax": 3,
+            "baseChance": 0.1,
+            "maxChance": 0.85,
+            "chancePerLevel": {
+                "smithing": 0.05
+            },
+            "levelReq": {
+                "smithing": 5
+            },
+            "xpPerItem": {
+                "smithing_group": 200
+            }
+        },
+        "minecraft:stick": {
+            "salvageMax": 1,
+            "baseChance": 0.3,
+            "maxChance": 0.8,
+            "chancePerLevel": {
+                "smithing": 0.05
+            },
+            "levelReq": {},
+            "xpPerItem": {
+                "smithing_group": 10
+            }
+        }
+    },
+    "override": true
+}

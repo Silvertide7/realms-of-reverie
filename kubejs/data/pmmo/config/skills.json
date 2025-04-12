@@ -1,0 +1,330 @@
+{
+  "skills": {
+    "strength": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/mob_effect/strength.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 255,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "dexterity": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/mob_effect/speed.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 255,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "constitution": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/mob_effect/regeneration.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 255,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "intelligence": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/item/enchanted_book.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 255,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "wisdom": {
+      "maxLevel": 20,
+      "icon": "irons_spellbooks:textures/mob_effect/oakskin.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 255,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "charisma": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/mob_effect/hero_of_the_village.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 255,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+
+    "acrobatics": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/mob_effect/hero_of_the_village.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 64636,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "acrobatics_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "dexterity": 0.3,
+        "acrobatics": 0.7
+      }
+    },
+
+    "swimming": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/mob_effect/dolphins_grace.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 16577758,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "swimming_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "constitution": 0.25,
+        "swimming": 0.75
+      }
+    },
+
+    "excavation": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/item/iron_shovel.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 5008532,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "excavation_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "constitution": 0.25,
+        "strength": 0.75,
+        "excavation": 3.0
+      }
+    },
+
+    "mining": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/item/iron_pickaxe.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 5008532,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "mining_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "dexterity": 0.5,
+        "strength": 0.5,
+        "mining": 3.0
+      }
+    },
+
+    "woodcutting": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/item/iron_axe.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 5008532,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "woodcutting_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "constitution": 0.75,
+        "strength": 0.25,
+        "woodcutting": 3.0
+      }
+    },
+
+    "arcana": {
+      "maxLevel": 20,
+      "icon": "irons_spellbooks:textures/item/pyromancer_helmet.png",
+      "iconSize": 18,
+      "useTotalLevels": false,
+      "color": 15484289,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "arcana_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "intelligence": 1.0,
+        "arcana": 1.0
+      }
+    },
+
+    "fishing": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/item/fishing_rod.png",
+      "iconSize": 16,
+      "useTotalLevels": false,
+      "color": 15484289,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "fishing_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "wisdom": 0.25,
+        "fishing": 0.75
+      }
+    },
+
+    "alchemy": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/item/potion.png",
+      "iconSize": 16,
+      "useTotalLevels": false,
+      "color": 15112448,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "alchemy_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "alchemy": 1.0,
+        "intelligence": 1.0
+      }
+    },
+
+    "smithing": {
+      "maxLevel": 20,
+      "icon": "pmmo:textures/skills/smithing.png",
+      "iconSize": 32,
+      "useTotalLevels": false,
+      "color": 15790320,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "smithing_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "smithing": 1.0,
+        "strength": 0.5,
+        "intelligence": 0.5
+      }
+    },
+
+    "husbandry": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/item/lead.png",
+      "iconSize": 32,
+      "useTotalLevels": false,
+      "color": 8684724,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "husbandry_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "husbandry": 0.5,
+        "charisma": 0.5
+      }
+    },
+
+    "farming": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/item/wheat.png",
+      "iconSize": 32,
+      "useTotalLevels": false,
+      "color": 58880,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "farming_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "farming": 0.75,
+        "wisdom": 0.25
+      }
+    },
+
+    "cooking": {
+      "maxLevel": 20,
+      "icon": "minecraft:textures/item/cooked_mutton.png",
+      "iconSize": 32,
+      "useTotalLevels": false,
+      "color": 15112448,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "cooking_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "cooking": 0.75,
+        "intelligence": 0.25
+      }
+    },
+
+    "katana": {
+      "maxLevel": 20,
+      "icon": "simplyswords:textures/item/diamond_katana.png",
+      "iconSize": 32,
+      "useTotalLevels": false,
+      "color": 15112448,
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "showInList": true
+    },
+    "katana_group": {
+      "noAfkPenalty": false,
+      "displayGroupName": false,
+      "useTotalLevels": false,
+      "groupFor": {
+        "katana": 0.75,
+        "dexterity": 0.25
+      }
+    }
+
+  },
+  "type": "SKILLS"
+}

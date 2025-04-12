@@ -10,3 +10,16 @@
 /weather rain
 /effect give Silvertide7 minecraft:night_vision 30
 /time set night
+/seed
+/pmmo genData begin
+/pmmo genData withOverride
+/pmmo genData withConfigs
+/pmmo genData disabler
+/pmmo genData begin
+/pmmo genData disabler
+/pmmo genData withConfigs
+/pmmo genData create
+/pmmo genData begin
+/pmmo genData create
+/parcool limitation get individual of Silvertide7 boolean
+/parcool limitation get individual of Silvertide7 possibility

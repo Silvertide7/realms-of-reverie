@@ -1,0 +1,168 @@
+{
+  "xp_gains": {
+    "reuse_penalty": 0.0,
+    "perks_plus_config": false,
+    "player_actions": {
+      "HEALTH_INCREASE": {
+        "wisdom": 10.0
+      },
+      "BREATH_CHANGE": {
+        "swimming": 1.0
+      },
+      "SUBMERGED": {
+        "swimming_group": 1.0
+      },
+      "CROUCH_JUMP": {
+        "agility": 2.5
+      },
+      "SPRINTING": {
+        "acrobatics_group": 55.0
+      },
+      "DIVING": {
+        "swimming": 1.0
+      },
+      "SWIM_SPRINTING": {
+        "swimming": 1.0
+      },
+      "SURFACING": {
+        "swimming": 1.0
+      },
+      "SWIMMING": {
+        "swimming": 1.0
+      },
+      "SPRINT_JUMP": {
+        "agility": 2.5
+      },
+      "HEALTH_DECREASE": {
+        "constitution": 10.0
+      },
+      "JUMP": {
+        "agility": 2.5
+      }
+    },
+    "damage": {
+      "DEAL_DAMAGE": {
+        "minecraft:generic_kill": {
+        },
+        "minecraft:player_attack": {
+        },
+        "#pmmo:gun": {
+        },
+        "#minecraft:is_projectile": {
+        },
+        "#pmmo:magic": {
+        }
+      },
+      "RECEIVE_DAMAGE": {
+        "minecraft:generic_kill": {
+          "endurance": 1
+        },
+        "#pmmo:impact": {
+          "endurance": 15
+        },
+        "#pmmo:environment": {
+          "endurance": 10
+        },
+        "#minecraft:is_projectile": {
+          "endurance": 15
+        },
+        "#pmmo:magic": {
+          "magic": 15
+        }
+      }
+    }
+  },
+  "party": {
+    "party_range": 50,
+    "party_bonus": {
+      "endurance": 1.1,
+      "combat": 1.05
+    }
+  },
+  "mob_scaling": {
+    "use_exponential_formula": true,
+    "per_level": 1.0,
+    "power_base": 1.104088404342588,
+    "ratios": {
+      "minecraft:generic.attack_damage": {
+        "combat": 1.0E-4
+      },
+      "minecraft:generic.movement_speed": {
+        "combat": 1.0E-6
+      },
+      "minecraft:generic.max_health": {
+        "combat": 0.001
+      }
+    },
+    "enabled": false,
+    "scaling_aoe": 150,
+    "base_level": 0,
+    "boss_scaling": 1.1
+  },
+  "vein_miner": {
+    "default_consume": 1,
+    "charge_modifier": 1.0,
+    "blacklist": [
+      "silentgear:saw"
+    ],
+    "enabled": true,
+    "require_settings": false
+  },
+  "general": {
+    "creative_reach": 10.0,
+    "salvage_block": "minecraft:smithing_table",
+    "treasure_enabled": false,
+    "brewing_tracked": true
+  },
+  "levels": {
+    "xp_min": 200,
+    "xp_base": 1.025,
+    "per_level": 1.1,
+    "global_modifier": 1.0,
+    "skill_modifiers": {},
+    "max_level": 20,
+    "static_levels": [
+      5000,
+      12500,
+      30000,
+      60000,
+      100000,
+      160000,
+      230000,
+      320000,
+      450000,
+      600000,
+      800000,
+      1200000,
+      1800000,
+      3000000,
+      4500000,
+      7000000,
+      10000000,
+      15000000,
+      22000000,
+      30000000
+    ],
+    "loss_on_death": 0.01,
+    "lose_only_excess": true
+  },
+  "requirements": {
+    "requirement_enabled": {
+      "RIDE": true,
+      "INTERACT": true,
+      "PLACE": true,
+      "TOOL": true,
+      "BREAK": true,
+      "KILL": true,
+      "ENTITY_INTERACT": true,
+      "WEAPON": true,
+      "TRAVEL": true,
+      "BREED": true,
+      "USE_ENCHANTMENT": true,
+      "USE": true,
+      "TAME": true,
+      "WEAR": true
+    }
+  },
+  "type": "SERVER"
+}

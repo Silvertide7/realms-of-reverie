@@ -1,0 +1,13 @@
+{
+    "dealt_damage_xp": {
+        "minecraft:player_attack": {
+            "melee_constitution": 16
+        }
+    },
+    "negative_effect": {
+      "minecraft:weakness": 2,
+      "minecraft:slowness": 2,
+      "minecraft:poison": 2
+    },
+    "override": true
+}

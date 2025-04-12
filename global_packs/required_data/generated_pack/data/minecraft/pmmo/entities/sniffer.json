@@ -1,0 +1,70 @@
+{
+  "nbt_xp_values": {
+    "DIVING": [],
+    "RECEIVE_DAMAGE": [],
+    "TAMING": [],
+    "EFFECT": [],
+    "SWIMMING": [],
+    "SPRINT_JUMP": [],
+    "SWIM_SPRINTING": [],
+    "SPRINTING": [],
+    "ENTITY": [],
+    "JUMP": [],
+    "DEAL_DAMAGE": [],
+    "SURFACING": [],
+    "SUBMERGED": [],
+    "CROUCH_JUMP": [],
+    "BREATH_CHANGE": [],
+    "CROUCH": [],
+    "BREED": [],
+    "SHIELD_BLOCK": [],
+    "RIDING": [],
+    "DEATH": []
+  },
+  "damage_type_xp": {
+    "RECEIVE_DAMAGE": {},
+    "DEAL_DAMAGE": {}
+  },
+  "nbt_damage_type_xp": {
+    "RECEIVE_DAMAGE": {},
+    "DEAL_DAMAGE": {}
+  },
+  "nbt_requirements": {
+    "BREED": [],
+    "ENTITY_INTERACT": [],
+    "KILL": [],
+    "RIDE": [],
+    "TAME": []
+  },
+  "xp_values": {
+    "DIVING": {},
+    "RECEIVE_DAMAGE": {},
+    "TAMING": {},
+    "EFFECT": {},
+    "SWIMMING": {},
+    "SPRINT_JUMP": {},
+    "SWIM_SPRINTING": {},
+    "SPRINTING": {},
+    "ENTITY": {},
+    "JUMP": {},
+    "DEAL_DAMAGE": {},
+    "SURFACING": {},
+    "SUBMERGED": {},
+    "CROUCH_JUMP": {},
+    "BREATH_CHANGE": {},
+    "CROUCH": {},
+    "BREED": {},
+    "SHIELD_BLOCK": {},
+    "RIDING": {},
+    "DEATH": {}
+  },
+  "override": false,
+  "isTagFor": [],
+  "requirements": {
+    "BREED": {},
+    "ENTITY_INTERACT": {},
+    "KILL": {},
+    "RIDE": {},
+    "TAME": {}
+  }
+}

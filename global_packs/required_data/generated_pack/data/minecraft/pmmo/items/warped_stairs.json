@@ -1,0 +1,76 @@
+{
+  "bonuses": {
+    "HELD": {},
+    "WORN": {}
+  },
+  "nbt_bonuses": {
+    "HELD": [],
+    "WORN": []
+  },
+  "salvage": {},
+  "vein_data": {
+    "chargeCap": 0,
+    "chargeRate": 0.0
+  },
+  "nbt_xp_values": {
+    "ENCHANT": [],
+    "RECEIVED_AS_TRADE": [],
+    "BREW": [],
+    "DEAL_DAMAGE": [],
+    "GIVEN_AS_TRADE": [],
+    "CRAFT": [],
+    "SMELT": [],
+    "BLOCK_PLACE": [],
+    "ANVIL_REPAIR": [],
+    "TOOL_BREAKING": [],
+    "ACTIVATE_ITEM": [],
+    "FISH": [],
+    "CONSUME": []
+  },
+  "damage_type_xp": {
+    "RECEIVE_DAMAGE": {},
+    "DEAL_DAMAGE": {}
+  },
+  "nbt_damage_type_xp": {
+    "RECEIVE_DAMAGE": {},
+    "DEAL_DAMAGE": {}
+  },
+  "nbt_requirements": {
+    "PLACE": [],
+    "INTERACT": [],
+    "USE": [],
+    "USE_ENCHANTMENT": [],
+    "WEAPON": [],
+    "WEAR": [],
+    "BREAK": [],
+    "TOOL": []
+  },
+  "negative_effect": {},
+  "xp_values": {
+    "ENCHANT": {},
+    "RECEIVED_AS_TRADE": {},
+    "BREW": {},
+    "DEAL_DAMAGE": {},
+    "GIVEN_AS_TRADE": {},
+    "CRAFT": {},
+    "SMELT": {},
+    "BLOCK_PLACE": {},
+    "ANVIL_REPAIR": {},
+    "TOOL_BREAKING": {},
+    "ACTIVATE_ITEM": {},
+    "FISH": {},
+    "CONSUME": {}
+  },
+  "override": false,
+  "isTagFor": [],
+  "requirements": {
+    "PLACE": {},
+    "INTERACT": {},
+    "USE": {},
+    "USE_ENCHANTMENT": {},
+    "WEAPON": {},
+    "WEAR": {},
+    "BREAK": {},
+    "TOOL": {}
+  }
+}

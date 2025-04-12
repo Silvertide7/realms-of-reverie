@@ -1,0 +1,13 @@
+{
+  "travel_req": {},
+  "global_mob_modifier": [],
+  "mob_modifier": {},
+  "negative_effect": {},
+  "vein_blacklist": [],
+  "override": false,
+  "isTagFor": [],
+  "bonus": {
+    "BIOME": {}
+  },
+  "positive_effect": {}
+}

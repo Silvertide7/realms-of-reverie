@@ -1,0 +1,25 @@
+{
+    "pmmo.wisdom": "Wisdom",
+    "pmmo.constitution": "Constitution",
+    "pmmo.dexterity": "Dexterity",
+    "pmmo.strength": "Strength",
+    "pmmo.intelligence": "Intelligence",
+
+    "pmmo.acrobatics": "Acrobatics",
+    "pmmo.arcana": "Arcana",
+    "pmmo.melee": "Melee",
+    "pmmo.defense": "Defense",
+    "pmmo.warding": "Warding",
+    "pmmo.husbandry": "Husbandry",
+    "pmmo.marksmanship": "Marksmanship",
+    
+    "pmmo.fire_magic": "Pyromancy",
+    "pmmo.ice_magic": "Cryomancy",
+    "pmmo.lightning_magic": "Electromancy",
+    "pmmo.holy_magic": "Lightweaving",
+    "pmmo.ender_magic": "Voidweaving",
+    "pmmo.nature_magic": "Terramancy",
+    "pmmo.evocation_magic": "Evocation",
+    "pmmo.blood_magic": "Haematurge",
+    "pmmo.eldritch_magic": "Eldritch"
+}
