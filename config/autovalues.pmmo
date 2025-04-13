@@ -1,0 +1,61 @@
+WITH config(autovalues)
+    set(enabled).value(true);
+
+    // ENABLED REQUIREMENTS
+    set(enabled_requirements).requirement(INTERACT).value(false);
+    set(enabled_requirements).requirement(USE).value(false);
+    set(enabled_requirements).requirement(USE_ENCHANTMENT).value(false);
+    set(enabled_requirements).requirement(RIDE).value(false);
+    set(enabled_requirements).requirement(TRAVEL).value(false);
+    set(enabled_requirements).requirement(TAME).value(false);
+    set(enabled_requirements).requirement(PLACE).value(false);
+    set(enabled_requirements).requirement(BREED).value(false);
+    set(enabled_requirements).requirement(ENTITY_INTERACT).value(false);
+    set(enabled_requirements).requirement(KILL).value(false);
+    set(enabled_requirements).requirement(WEAPON).value(false);
+    set(enabled_requirements).requirement(WEAR).value(false);
+    set(enabled_requirements).requirement(BREAK).value(false);
+    set(enabled_requirements).requirement(TOOL).value(false);
+
+    set(enabled_xp_awards).event(HEALTH_INCREASE).value(false);
+    set(enabled_xp_awards).event(HEALTH_DECREASE).value(false);
+    set(enabled_xp_awards).event(RECEIVE_DAMAGE).value(false);
+    set(enabled_xp_awards).event(ENCHANT).value(true);
+    set(enabled_xp_awards).event(TAMING).value(false);
+    set(enabled_xp_awards).event(SKILL_UP).value(false);
+    set(enabled_xp_awards).event(SPRINT_JUMP).value(false);
+    set(enabled_xp_awards).event(JUMP).value(false);
+    set(enabled_xp_awards).event(BREW).value(false);
+    set(enabled_xp_awards).event(SURFACING).value(false);
+    set(enabled_xp_awards).event(ACTIVATE_BLOCK).value(false);
+    set(enabled_xp_awards).event(BLOCK_PLACE).value(false);
+    set(enabled_xp_awards).event(BREATH_CHANGE).value(false);
+    set(enabled_xp_awards).event(TOOL_BREAKING).value(false);
+    set(enabled_xp_awards).event(BREAK_SPEED).value(false);
+    set(enabled_xp_awards).event(RIDING).value(false);
+    set(enabled_xp_awards).event(DIVING).value(false);
+    set(enabled_xp_awards).event(EFFECT).value(false);
+    set(enabled_xp_awards).event(SWIMMING).value(false);
+    set(enabled_xp_awards).event(RECEIVED_AS_TRADE).value(false);
+    set(enabled_xp_awards).event(SWIM_SPRINTING).value(false);
+    set(enabled_xp_awards).event(SPRINTING).value(false);
+    set(enabled_xp_awards).event(ENTITY).value(false);
+    set(enabled_xp_awards).event(DEAL_DAMAGE).value(false);
+    set(enabled_xp_awards).event(GROW).value(false);
+    set(enabled_xp_awards).event(GIVEN_AS_TRADE).value(false);
+    set(enabled_xp_awards).event(BLOCK_BREAK).value(false);
+    set(enabled_xp_awards).event(HIT_BLOCK).value(false);
+    set(enabled_xp_awards).event(CRAFT).value(false);
+    set(enabled_xp_awards).event(SMELT).value(false);
+    set(enabled_xp_awards).event(SUBMERGED).value(false);
+    set(enabled_xp_awards).event(CROUCH_JUMP).value(false);
+    set(enabled_xp_awards).event(ANVIL_REPAIR).value(true);
+    set(enabled_xp_awards).event(CROUCH).value(false);
+    set(enabled_xp_awards).event(ACTIVATE_ITEM).value(false);
+    set(enabled_xp_awards).event(BREED).value(false);
+    set(enabled_xp_awards).event(SHIELD_BLOCK).value(true);
+    set(enabled_xp_awards).event(DEATH).value(false);
+    set(enabled_xp_awards).event(FISH).value(false);
+    set(enabled_xp_awards).event(CONSUME).value(true);
+
+END
