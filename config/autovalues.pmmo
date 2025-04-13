@@ -20,7 +20,6 @@ WITH config(autovalues)
     set(enabled_xp_awards).event(HEALTH_INCREASE).value(false);
     set(enabled_xp_awards).event(HEALTH_DECREASE).value(false);
     set(enabled_xp_awards).event(RECEIVE_DAMAGE).value(false);
-    set(enabled_xp_awards).event(ENCHANT).value(true);
     set(enabled_xp_awards).event(TAMING).value(false);
     set(enabled_xp_awards).event(SKILL_UP).value(false);
     set(enabled_xp_awards).event(SPRINT_JUMP).value(false);
@@ -49,13 +48,33 @@ WITH config(autovalues)
     set(enabled_xp_awards).event(SMELT).value(false);
     set(enabled_xp_awards).event(SUBMERGED).value(false);
     set(enabled_xp_awards).event(CROUCH_JUMP).value(false);
-    set(enabled_xp_awards).event(ANVIL_REPAIR).value(true);
     set(enabled_xp_awards).event(CROUCH).value(false);
     set(enabled_xp_awards).event(ACTIVATE_ITEM).value(false);
     set(enabled_xp_awards).event(BREED).value(false);
-    set(enabled_xp_awards).event(SHIELD_BLOCK).value(true);
     set(enabled_xp_awards).event(DEATH).value(false);
     set(enabled_xp_awards).event(FISH).value(false);
+    set(enabled_xp_awards).event(ENCHANT).value(true);
+    set(enabled_xp_awards).event(ANVIL_REPAIR).value(true);
+    set(enabled_xp_awards).event(SHIELD_BLOCK).value(true);
     set(enabled_xp_awards).event(CONSUME).value(true);
+
+    set(item_xp).event(ANVIL_REPAIR).value(smithing_group,5);
+    set(item_xp).event(BLOCK_PLACE).value(building,0);
+    set(item_xp).event(ENCHANT).value(arcana_group,10);
+    set(item_xp).event(FISH).value(fishing_group,50);
+    set(item_xp).event(CONSUME).value(constitution,30);
+    set(item_xp).event(SMELT).value(smithing,40);
+    set(item_xp).event(CRAFT).value(crafting,0);
+    
+    set(block_xp).event(GROW).value(farming_group,50);
+    set(block_xp).event(BLOCK_BREAK).value(mining,0);
+    set(block_xp).event(BLOCK_PLACE).value(building,0);
+    
+    set(entity_xp).event(TAMING).value(husbandry_group,1);
+    set(entity_xp).event(ENTITY).value(charisma,1);
+    set(entity_xp).event(SHIELD_BLOCK).value(defense_group,1);
+    set(entity_xp).event(BREED).value(husbandry_group,1);
+    set(entity_xp).event(RIDING).value(husbandry_group,1);
+    set(entity_xp).event(DEATH).value(constitution,0);
 
 END
