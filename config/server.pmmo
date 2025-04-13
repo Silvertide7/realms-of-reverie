@@ -1,0 +1,112 @@
+WITH config(server)
+
+    set(creative_reach).value(10);
+    set(salvage_block).value(minecraft:smithing_table);
+    set(treasure_enabled).value(false);
+    set(brewing_tracked).value(true);
+
+    set(max_level).value(20);
+    set(static_levels).value(
+      5000,
+      12500,
+      30000,
+      60000,
+      100000,
+      160000,
+      230000,
+      320000,
+      450000,
+      600000,
+      800000,
+      1200000,
+      1800000,
+      3000000,
+      4500000,
+      7000000,
+      10000000,
+      15000000,
+      22000000,
+      30000000
+    );
+
+    // XP LOSS ON DEATH
+    set(loss_on_death).value(0.01);
+    set(lose_only_excess).value(true);
+    set(global_modifier).value(1.0);
+
+    // PARTY
+    set(party_range).value(0);
+    set(mob_scaling_enabled).value(false);
+
+    // VEIN MINING
+    set(vein_enabled).value(true);
+    set(require_settings).value(false);
+    set(default_consume).value(1);
+    set(charge_modifier).value(1.0);
+
+    // DAMAGE DEALT
+    set(damage_dealt).type(minecraft:magic).value(arcana,20);
+    set(damage_dealt).type(minecraft:indirect_magic).value(arcana,20);
+    set(damage_dealt).type(minecraft:on_fire).value(fire_magic_group,40);
+    set(damage_dealt).type(minecraft:wither).value(evocation_magic_group,40);
+    set(damage_dealt).type(minecraft:lightning_bolt).value(lightning_magic_group,40);
+    set(damage_dealt).type(minecraft:freeze).value(ice_magic_group,40);
+
+    set(damage_dealt).type(irons_spellbooks:fire_magic).value(fire_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:fire_field).value(fire_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:ice_magic).value(ice_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:ender_magic).value(ender_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:dragon_breath_pool).value(ender_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:lightning_magic).value(lightning_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:heartstop).value(lightning_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:blood_magic).value(blood_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:blood_cauldron).value(blood_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:evocation_magic).value(evocation_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:nature_magic).value(nature_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:poison_cloud).value(nature_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:holy_magic).value(holy_magic_group,40);
+    set(damage_dealt).type(irons_spellbooks:eldritch_magic).value(arcana,40);
+
+    set(damage_dealt).type(apothic_attributes:bleeding).value(arcana,40);
+    set(damage_dealt).type(apothic_attributes:cold_damage).value(ice_magic_group,40);
+    set(damage_dealt).type(apothic_attributes:current_hp_damage).value(constitution,10);
+    set(damage_dealt).type(apothic_attributes:detonation).value(evocation_magic_group,40);
+    set(damage_dealt).type(apothic_attributes:fire_damage).value(fire_magic_group,40);
+
+    set(damage_dealt).type(neoforge:poison).value(nature_magic_group,40);
+
+     // DAMAGE RECEIVED
+    set(damage_received).type(minecraft:magic).value(warding_group,20);
+    set(damage_received).type(minecraft:indirect_magic).value(warding_group,20);
+    set(damage_received).type(minecraft:lightning_bolt).value(warding_group,20);
+    set(damage_received).type(minecraft:freeze).value(warding_group,20);
+
+    set(damage_received).type(#pmmo:impact).value(constitution,15);
+    set(damage_received).type(#pmmo:environment).value(constitution,10);
+    set(damage_received).type(#minecraft:is_projectile).value(constitution,15);
+
+
+    set(damage_received).type(irons_spellbooks:fire_magic).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:fire_field).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:ice_magic).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:ender_magic).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:dragon_breath_pool).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:lightning_magic).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:heartstop).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:blood_magic).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:blood_cauldron).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:evocation_magic).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:nature_magic).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:poison_cloud).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:holy_magic).value(warding_group,20);
+    set(damage_received).type(irons_spellbooks:eldritch_magic).value(warding_group,20);
+
+    set(damage_received).type(apothic_attributes:bleeding).value(constitution,20);
+    set(damage_received).type(apothic_attributes:cold_damage).value(warding_group,20);
+    set(damage_received).type(apothic_attributes:current_hp_damage).value(constitution,10);
+    set(damage_received).type(apothic_attributes:detonation).value(warding_group,20);
+    set(damage_received).type(apothic_attributes:fire_damage).value(warding_group,20);
+
+    set(damage_received).type(neoforge:poison).value(warding_group,20);
+
+END
