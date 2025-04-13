@@ -1,3 +1,4 @@
+#noload
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.block.Block;
 import crafttweaker.api.resource.ResourceLocation;

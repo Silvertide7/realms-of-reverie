@@ -1,3 +1,4 @@
+#noload
 public enum Ore {
     coal("coal"),
     copper("copper"),

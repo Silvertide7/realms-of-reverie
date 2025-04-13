@@ -1,3 +1,4 @@
+#noload
 import crafttweaker.api.data.MapData;
 import crafttweaker.api.resource.ResourceLocation;
 import crafttweaker.api.entity.player.Player;
@@ -15,6 +16,5 @@ CTUtils.registerPerk(perkID, defaults, (player, nbt) => true, (player, nbt) => {
     println(nbt as string);
     return new MapData();
 });
-#noload
 // https://github.com/Caltinor/Project-MMO-2.0/blob/main/src/main/java/harmonised/pmmo/compat/crafttweaker/CTUtils.java
 // https://github.com/Caltinor/Project-MMO-2.0/tree/main/src/main/java/harmonised/pmmo/compat/crafttweaker

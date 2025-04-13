@@ -24,14 +24,14 @@
         "per_level": 0.025,
         "for_damage": "minecraft:mob_attack",
         "perk": "pmmo:damage_reduce",
-        "skill": "endurance"
+        "skill": "defense"
       }
     ],
     "CROUCH_JUMP": [
       {
         "perk": "pmmo:jump_boost",
-        "per_level": 0.0015,
-        "skill": "agility"
+        "per_level": 0.01,
+        "skill": "strength"
       }
     ],
     "SKILL_UP": [

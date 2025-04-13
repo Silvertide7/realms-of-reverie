@@ -54,8 +54,8 @@
   },
   "diminishing_xp": {
     "RIDING": {
-      "reduction": 0.005,
-      "cooloff_amount": 0,
+      "reduction": 0.0005,
+      "cooloff_amount": 0.01,
       "tolerance_percent": 0.0,
       "strict_tolerance": true,
       "source": [
@@ -63,7 +63,7 @@
         "minecraft:boat"
       ],
       "min_time_to_apply": 0,
-      "retention_duration": 200,
+      "retention_duration": 100,
       "tolerance_flat": 0
     }
   },

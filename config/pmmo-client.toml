@@ -79,10 +79,10 @@
 			"ENTITY_INTERACT Req  tooltip enabled" = true
 
 		[Client.Tooltip_Visibility.Xp_Gain_Tooltips]
-			"ANVIL_REPAIR XP Gain  tooltip enabled" = true
-			"BLOCK_BREAK XP Gain  tooltip enabled" = true
+			"ANVIL_REPAIR XP Gain  tooltip enabled" = false
+			"BLOCK_BREAK XP Gain  tooltip enabled" = false
 			"BREAK_SPEED XP Gain  tooltip enabled" = true
-			"BLOCK_PLACE XP Gain  tooltip enabled" = true
+			"BLOCK_PLACE XP Gain  tooltip enabled" = false
 			"BREATH_CHANGE XP Gain  tooltip enabled" = true
 			"BREED XP Gain  tooltip enabled" = true
 			"BREW XP Gain  tooltip enabled" = true
@@ -93,10 +93,10 @@
 			"RECEIVE_DAMAGE XP Gain  tooltip enabled" = true
 			"DEAL_DAMAGE XP Gain  tooltip enabled" = true
 			"DEATH XP Gain  tooltip enabled" = true
-			"ENCHANT XP Gain  tooltip enabled" = true
+			"ENCHANT XP Gain  tooltip enabled" = false
 			"EFFECT XP Gain  tooltip enabled" = true
 			"FISH XP Gain  tooltip enabled" = true
-			"SMELT XP Gain  tooltip enabled" = true
+			"SMELT XP Gain  tooltip enabled" = false
 			"GROW XP Gain  tooltip enabled" = true
 			"GIVEN_AS_TRADE XP Gain  tooltip enabled" = true
 			"HEALTH_INCREASE XP Gain  tooltip enabled" = true

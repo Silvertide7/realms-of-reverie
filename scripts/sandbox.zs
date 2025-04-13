@@ -1,3 +1,4 @@
+#noload
 import crafttweaker.api.item.IItemStack;
 
 println("SANDBOX");
@@ -343,4 +344,3 @@ println("SANDBOX");
 //     }
 //     println("-----------------");
 // }
-#noload

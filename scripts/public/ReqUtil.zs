@@ -1,3 +1,4 @@
+#noload
 import crafttweaker.api.item.IItemStack;
 
 import mods.pmmo.CTUtils;
