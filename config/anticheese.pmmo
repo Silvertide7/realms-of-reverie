@@ -1,0 +1,38 @@
+WITH config(anticheese)
+  set(afk_can_subtract).value(false);
+    
+  set(afk).event(SUBMERGED)
+    .reduction(0.1)
+    .cooloff_amount(1)
+    .min_time_to_apply(200);
+
+  set(afk).event(DIVING)
+    .reduction(0.1)
+    .cooloff_amount(1)
+    .min_time_to_apply(200);
+
+  set(afk).event(SURFACING)
+    .reduction(0.1)
+    .cooloff_amount(1)
+    .min_time_to_apply(200);
+
+  set(afk).event(SWIMMING)
+    .reduction(0.1)
+    .cooloff_amount(1)
+    .min_time_to_apply(200);
+
+  set(afk).event(SWIM_SPRINTING)
+    .reduction(0.1)
+    .cooloff_amount(1)
+    .min_time_to_apply(200);
+
+  set(diminishing_xp).event(RIDING)
+    .reduction(0.0005)
+    .source(minecraft:horse,minecraft:boat)
+    .retention_duration(100);
+
+  set(normalization).event(SPRINTING)
+    .tolerance_percent(0.1)
+    .retention_duration(400)
+    .tolerance_flat(10);
+END
