@@ -12,25 +12,25 @@ source deploy.env
 
 if [ -z ${SFTP_PASS+x} ]; then
     echo "Could not find SFTP_PASS in deploy.env"
-    exit 1
+    exit 1  
 fi
 
-echo "Deleting KubeJS scripts on the remote server."
+echo "Deleting Craftweaker scripts on the remote server."
 
-sshpass -p "$SFTP_PASS" ssh -p $SFTP_PORT $SFTP_USER@$SFTP_HOST "rm -rf kubejs/*"
+sshpass -p "$SFTP_PASS" ssh -p $SFTP_PORT $SFTP_USER@$SFTP_HOST "rm -rf scripts/*"
 
 if [ $? -eq 0 ]; then
-    echo "All KubeJS script have been removed."
+    echo "All Craftweaker script have been removed."
 else
-    echo "Failed to delete KubeJS scripts."
+    echo "Failed to delete Craftweaker scripts."
     exit $?
 fi
 
-echo "Uploading local KubeJS scripts."
-sshpass -p "$SFTP_PASS" scp -P $SFTP_PORT -r ../kubejs/* $SFTP_USER@$SFTP_HOST:kubejs/
+echo "Uploading local Craftweaker scripts."
+sshpass -p "$SFTP_PASS" scp -P $SFTP_PORT -r ../scripts/* $SFTP_USER@$SFTP_HOST:scripts/
 if [ $? -eq 0 ] || [ $? -eq 1 ]; then
-    echo "Successfully uploaded KubeJS scripts."
+    echo "Successfully uploaded Craftweaker scripts."
 else
-    echo "Failed to upload KubeJS scripts."
+    echo "Failed to upload Crafttweaker scripts."
     exit $?
 fi
