@@ -1,0 +1,84 @@
+{
+  "xp_gains": {
+    "reuse_penalty": 0.0,
+    "perks_plus_config": false,
+    "player_actions": {
+    },
+    "damage": {
+      "RECEIVE_DAMAGE": {
+      },
+      "DEAL_DAMAGE": {
+      }
+    }
+  },
+  "party": {
+    "party_range": 0,
+    "party_bonus": {
+    }
+  },
+  "mob_scaling": {
+    "use_exponential_formula": true,
+    "per_level": 1.0,
+    "power_base": 1.104088404342588,
+    "ratios": {
+      "minecraft:generic.attack_damage": {
+        "combat": 1.0E-4
+      },
+      "minecraft:generic.movement_speed": {
+        "combat": 1.0E-6
+      },
+      "minecraft:generic.max_health": {
+        "combat": 0.001
+      }
+    },
+    "enabled": false,
+    "scaling_aoe": 150,
+    "base_level": 0,
+    "boss_scaling": 1.1
+  },
+  "vein_miner": {
+    "default_consume": 1,
+    "charge_modifier": 1.0,
+    "blacklist": [],
+    "enabled": false,
+    "require_settings": false
+  },
+  "general": {
+    "creative_reach": 10.0,
+    "salvage_block": "minecraft:smithing_table",
+    "treasure_enabled": false,
+    "brewing_tracked": false
+  },
+  "levels": {
+    "xp_min": 10000,
+    "xp_base": 2,
+    "per_level": 1.5,
+    "global_modifier": 1.0,
+    "skill_modifiers": {},
+    "max_level": 20,
+    "static_levels": [
+      -1
+    ],
+    "loss_on_death": 0.00,
+    "lose_only_excess": true
+  },
+  "requirements": {
+    "requirement_enabled": {
+      "TAME": false,
+      "TRAVEL": false,
+      "USE": false,
+      "ENTITY_INTERACT": false,
+      "USE_ENCHANTMENT": false,
+      "PLACE": false,
+      "INTERACT": false,
+      "BREAK": false,
+      "WEAR": false,
+      "BREED": false,
+      "WEAPON": false,
+      "KILL": false,
+      "RIDE": false,
+      "TOOL": false
+    }
+  },
+  "type": "SERVER"
+}
