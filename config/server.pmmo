@@ -45,6 +45,11 @@ WITH config(server)
 
   // DISABLE REQUIREMENTS
   set(disable_req).value(KILL);
+  set(disable_req).value(USE_ENCHANTMENT);
+  set(disable_req).value(TRAVEL);
+  set(disable_req).value(ENTITY_INTERACT);
+  set(disable_req).value(PLACE);
+  set(disable_req).value(INTERACT);
 
   // XP LOSS ON DEATH
   set(loss_on_death).value(0.01);
@@ -61,6 +66,15 @@ WITH config(server)
   set(player_actions).event(JUMP).value(acrobatics_group,15);
   set(player_actions).event(CROUCH_JUMP).value(acrobatics_group,15);
   set(player_actions).event(SPRINT_JUMP).value(acrobatics_group,15);
+  set(player_actions).event(SPRINTING).value(acrobatics_group,55);
+
+  set(player_actions).event(BREATH_CHANGE).value(swimming_group,5);
+  set(player_actions).event(DIVING).value(swimming_group,50);
+  set(player_actions).event(SWIM_SPRINTING).value(swimming_group,60);
+  set(player_actions).event(SURFACING).value(swimming_group,50);
+  set(player_actions).event(SWIMMING).value(swimming_group,50);
+  set(player_actions).event(SUBMERGED).value(swimming_group,0);
+
 
   // DAMAGE DEALT
   set(damage_dealt).type(minecraft:magic).value(arcana,20);
