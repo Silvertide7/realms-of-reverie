@@ -5,6 +5,15 @@ WITH xp(BLOCK_BREAK)
         farmersdelight:onions, farmersdelight:rice, farmersdelight:rice_panicles, 
         farmersdelight:budding_tomatoes, farmersdelight:tomatoes)
     .award(farming_group, 50);
+END
+
+WITH xp(GROW)
+    block(minecraft:wheat, minecraft:carrots, minecraft:potatoes, minecraft:beetroots, 
+        minecraft:pumpkin_stem, minecraft:pumpkin, minecraft:melon_stem, minecraft:melon, 
+        minecraft:torchflower_crop, minecraft:torchflower, farmersdelight:cabbages, 
+        farmersdelight:onions, farmersdelight:rice, farmersdelight:rice_panicles, 
+        farmersdelight:budding_tomatoes, farmersdelight:tomatoes)
+    .award(farming_group, 10);
 
     block(twilightforest:hollow_oak_sapling, twilightforest:canopy_sapling, 
         twilightforest:rainbow_oak_sapling, twilightforest:potted_hollow_oak_sapling, 
@@ -25,13 +34,4 @@ WITH xp(BLOCK_BREAK)
         minecraft:jungle_sapling, minecraft:potted_birch_sapling, 
         minecraft:potted_oak_sapling, minecraft:dark_oak_sapling, minecraft:birch_sapling)
     .award(farming_group, 200);
-END
-
-WITH xp(GROW)
-    block(minecraft:wheat, minecraft:carrots, minecraft:potatoes, minecraft:beetroots, 
-        minecraft:pumpkin_stem, minecraft:pumpkin, minecraft:melon_stem, minecraft:melon, 
-        minecraft:torchflower_crop, minecraft:torchflower, farmersdelight:cabbages, 
-        farmersdelight:onions, farmersdelight:rice, farmersdelight:rice_panicles, 
-        farmersdelight:budding_tomatoes, farmersdelight:tomatoes)
-    .award(farming_group, 10);
 END
