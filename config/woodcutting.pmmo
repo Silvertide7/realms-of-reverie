@@ -1,0 +1,75 @@
+WITH xp(BLOCK_BREAK)
+    // Common XP Blocks (60 XP)
+    block(minecraft:mangrove_roots, minecraft:bookshelf, 
+        twilightforest:mangrove_root, twilightforest:root, 
+        twilightforest:liveroot_block)
+        .award(woodcutting_group, 60);
+
+    // Leaf Blocks (12 XP)
+    block(projectvibrantjourneys:dead_fallen_leaves, projectvibrantjourneys:fallen_leaves, 
+        twilightforest:hardened_dark_leaves, twilightforest:thorn_leaves, twilightforest:twilight_oak_leaves, 
+        twilightforest:dark_leaves, twilightforest:mining_leaves, twilightforest:canopy_leaves, 
+        twilightforest:transformation_leaves, twilightforest:mangrove_leaves, twilightforest:sorting_leaves, 
+        twilightforest:fallen_leaves, twilightforest:rainbow_oak_leaves, twilightforest:time_leaves, 
+        twilightforest:beanstalk_leaves, twilightforest:giant_leaves, twilightdelight:ironwood_leaves, 
+        alexscaves:ancient_leaves, minecraft:cherry_leaves, minecraft:azalea_leaves, minecraft:oak_leaves, 
+        minecraft:mangrove_leaves, minecraft:acacia_leaves, minecraft:jungle_leaves, minecraft:flowering_azalea_leaves, 
+        minecraft:spruce_leaves, minecraft:birch_leaves, minecraft:dark_oak_leaves)
+        .award(woodcutting_group, 12);
+
+    // Log Blocks (80 XP)
+    block(projectvibrantjourneys:acacia_hollow_log, projectvibrantjourneys:cherry_hollow_log, 
+        projectvibrantjourneys:dark_oak_hollow_log, projectvibrantjourneys:jungle_hollow_log, 
+        projectvibrantjourneys:oak_hollow_log, projectvibrantjourneys:spruce_hollow_log, 
+        projectvibrantjourneys:mangrove_hollow_log, projectvibrantjourneys:birch_hollow_log, 
+        twilightforest:time_log_core, twilightforest:hollow_canopy_log_horizontal, twilightforest:sorting_log_core, 
+        twilightforest:hollow_jungle_log_horizontal, twilightforest:hollow_dark_oak_log_horizontal, 
+        twilightforest:hollow_time_log_vertical, twilightforest:mangrove_log, twilightforest:hollow_spruce_log_climbable, 
+        twilightforest:hollow_vangrove_log_horizontal, twilightforest:hollow_vangrove_log_vertical, 
+        twilightforest:hollow_mangrove_log_horizontal, twilightforest:twilight_oak_log, twilightforest:hollow_canopy_log_vertical, 
+        twilightforest:hollow_sorting_log_horizontal, twilightforest:hollow_dark_oak_log_climbable, 
+        twilightforest:hollow_sorting_log_climbable, twilightforest:hollow_twilight_oak_log_vertical, twilightforest:cinder_log, 
+        twilightforest:hollow_oak_log_horizontal, twilightforest:hollow_oak_log_climbable, twilightforest:mining_log, 
+        twilightforest:hollow_birch_log_horizontal, twilightforest:mining_log_core, twilightforest:hollow_jungle_log_climbable, 
+        twilightforest:hollow_dark_log_horizontal, twilightforest:hollow_cherry_log_vertical, 
+        twilightforest:hollow_birch_log_climbable, twilightforest:dark_log, twilightforest:canopy_log, 
+        twilightforest:hollow_mining_log_climbable, twilightforest:hollow_cherry_log_horizontal, 
+        twilightforest:hollow_acacia_log_vertical, twilightforest:hollow_vangrove_log_climbable, 
+        twilightforest:hollow_sorting_log_vertical, twilightforest:hollow_dark_oak_log_vertical, 
+        twilightforest:hollow_twilight_oak_log_horizontal, twilightforest:hollow_dark_log_climbable, 
+        twilightforest:hollow_mining_log_vertical, twilightforest:transformation_log_core, twilightforest:hollow_spruce_log_vertical, 
+        twilightforest:hollow_mangrove_log_climbable, twilightforest:hollow_transformation_log_vertical, 
+        twilightforest:hollow_spruce_log_horizontal, twilightforest:hollow_birch_log_vertical, 
+        twilightforest:hollow_transformation_log_horizontal, twilightforest:hollow_acacia_log_climbable, 
+        twilightforest:time_log, twilightforest:hollow_jungle_log_vertical, twilightforest:giant_log, 
+        twilightforest:hollow_mining_log_horizontal, twilightforest:hollow_mangrove_log_vertical, 
+        twilightforest:hollow_canopy_log_climbable, twilightforest:hollow_transformation_log_climbable, 
+        twilightforest:hollow_acacia_log_horizontal, twilightforest:sorting_log, twilightforest:hollow_time_log_horizontal, 
+        twilightforest:transformation_log, twilightforest:hollow_dark_log_vertical, twilightforest:hollow_time_log_climbable, 
+        twilightforest:hollow_oak_log_vertical, twilightforest:hollow_cherry_log_climbable, 
+        twilightforest:hollow_twilight_oak_log_climbable, twilightdelight:ironwood_log, 
+        alexscaves:thornwood_log, alexscaves:pewen_log, minecraft:mangrove_log, minecraft:dark_oak_log, 
+        minecraft:jungle_log, minecraft:spruce_log, minecraft:cherry_log, minecraft:acacia_log, 
+        minecraft:birch_log, minecraft:oak_log, minecraft:warped_stem, minecraft:crimson_stem)
+        .award(woodcutting_group, 80);
+
+    // Plank Blocks (40 XP)
+    block(tflostblocks:thorn_planks, twilightforest:time_planks, twilightforest:sorting_planks, 
+        twilightforest:mangrove_planks, twilightforest:transformation_planks, twilightforest:canopy_planks, 
+        twilightforest:mining_planks, twilightforest:dark_planks, twilightforest:twilight_oak_planks, 
+        alexscaves:thornwood_planks, alexscaves:pewen_planks, minecraft:dark_oak_planks, minecraft:birch_planks, 
+        minecraft:jungle_planks, minecraft:spruce_planks, minecraft:mangrove_planks, minecraft:acacia_planks, 
+        minecraft:warped_planks, minecraft:oak_planks, minecraft:bamboo_planks, minecraft:cherry_planks, 
+        minecraft:crimson_planks)
+        .award(woodcutting_group, 40);
+
+    // Stripped Log Blocks (120 XP)
+    block(twilightforest:stripped_transformation_log, twilightforest:stripped_dark_log, 
+        twilightforest:stripped_mangrove_log, twilightforest:stripped_mining_log, twilightforest:stripped_canopy_log, 
+        twilightforest:stripped_sorting_log, twilightforest:stripped_twilight_oak_log, twilightforest:stripped_time_log, 
+        alexscaves:stripped_pewen_log, alexscaves:stripped_thornwood_log, minecraft:stripped_birch_log, 
+        minecraft:stripped_mangrove_log, minecraft:stripped_dark_oak_log, minecraft:stripped_cherry_log, 
+        minecraft:stripped_spruce_log, minecraft:stripped_jungle_log, minecraft:stripped_oak_log, 
+        minecraft:stripped_acacia_log, minecraft:stripped_crimson_stem, minecraft:stripped_warped_stem)
+        .award(woodcutting_group, 120);
+END
