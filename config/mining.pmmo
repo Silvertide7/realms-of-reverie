@@ -1,4 +1,44 @@
 WITH xp(BLOCK_BREAK)
+    block(minecraft:coal_ore)
+        .award(mining_group, 40);
+    block(minecraft:deepslate_coal_ore)
+        .award(mining_group, 52);
+
+    block(minecraft:copper_ore)
+        .award(mining_group, 80);
+    block(minecraft:deepslate_copper_ore)
+        .award(mining_group, 104);
+
+    block(minecraft:iron_ore)
+        .award(mining_group, 100);
+    block(minecraft:deepslate_iron_ore)
+        .award(mining_group, 130);
+
+    block(minecraft:lapis_ore)
+        .award(mining_group, 120);
+    block(minecraft:deepslate_lapis_ore)
+        .award(mining_group, 156);
+
+    block(minecraft:redstone_ore)
+        .award(mining_group, 120);
+    block(minecraft:deepslate_redstone_ore)
+        .award(mining_group, 156);
+
+    block(minecraft:gold_ore)
+        .award(mining_group, 200);
+    block(minecraft:deepslate_gold_ore)
+        .award(mining_group, 260);
+
+    block(minecraft:emerald_ore)
+        .award(mining_group, 300);
+    block(minecraft:deepslate_emerald_ore)
+        .award(mining_group, 390);
+
+    block(minecraft:diamond_ore)
+        .award(mining_group, 600);
+    block(minecraft:deepslate_diamond_ore)
+        .award(mining_group, 780);
+    
     block(irons_spellbooks:arcane_debris, minecraft:ancient_debris)
         .award(mining_group, 2000);
 
