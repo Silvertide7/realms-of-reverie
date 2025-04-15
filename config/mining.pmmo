@@ -66,5 +66,5 @@ WITH xp(BLOCK_BREAK)
     ).award(mining_group, 30);
 
     block(minecraft:cobblestone, minecraft:stone, minecraft:netherrack, minecraft:ice)
-    .award(mining_group, 4);
+    .award(mining_group, 5);
 END
