@@ -1,0 +1,52 @@
+WITH xp(FISH)
+    item(minecraft:cod)
+        .award(fishing_group, 100);
+
+    item(aquaculture:synodontis)
+        .award(fishing_group, 150);
+
+    item(aquaculture:piranha)
+        .award(fishing_group, 120);
+
+    item(minecraft:salmon, aquaculture:atlantic_herring, aquaculture:minnow, aquaculture:boulti, aquaculture:tambaqui, aquaculture:brown_shrooma, aquaculture:red_shrooma)
+        .award(fishing_group, 250);
+
+    item(aquaculture:bayad)
+        .award(fishing_group, 300);
+
+    item(minecraft:pufferfish)
+        .award(fishing_group, 350);
+
+    item(aquaculture:perch)
+        .award(fishing_group, 630);
+
+    item(aquaculture:blackfish)
+        .award(fishing_group, 350);
+
+    item(minecraft:nautilus_shell, minecraft:name_tag, minecraft:saddle, minecraft:enchanted_book, aquaculture:pink_salmon, aquaculture:leech, aquaculture:rainbow_trout, aquaculture:bluegill, aquaculture:smallmouth_bass, aquaculture:brown_trout, aquaculture:carp, aquaculture:pollock, aquaculture:gar, aquaculture:jellyfish, aquaculture:red_grouper)
+        .award(fishing_group, 700);
+
+    item(aquaculture:muskellunge)
+        .award(fishing_group, 500);
+
+    item(aquaculture:atlantic_cod)
+        .award(fishing_group, 800);
+
+    item(aquaculture:arapaima, aquaculture:arrau_turtle)
+        .award(fishing_group, 1200);
+
+    item(minecraft:tropical_fish, aquaculture:pacific_halibut, aquaculture:atlantic_halibut, aquaculture:capitaine)
+        .award(fishing_group, 1000);
+
+    item(aquaculture:tuna, aquaculture:box_turtle, aquaculture:lockbox, aquaculture:message_in_a_bottle)
+        .award(fishing_group, 1500);
+
+    item(aquaculture:goldfish)
+        .award(fishing_group, 2250);
+
+    item(aquaculture:neptunes_bounty)
+        .award(fishing_group, 3000);
+
+    item(aquaculture:treasure_chest)
+        .award(fishing_group, 6000);
+END
