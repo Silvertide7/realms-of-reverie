@@ -1,0 +1,12 @@
+WITH xp(BLOCK_BREAK)
+    block(minecraft:dirt, minecraft:sand, minecraft:grass_block).award(excavation_group, 30);
+
+    block(minecraft:coarse_dirt, minecraft:dirt_path, 
+            minecraft:farmland, minecraft:red_sand, minecraft:mud, minecraft:clay, 
+            minecraft:gravel, minecraft:snow_block)
+        .award(excavation_group, 70);
+
+    block(minecraft:crimson_nylium, minecraft:mycelium, minecraft:warped_nylium, minecraft:soul_soil, 
+            minecraft:soul_sand, minecraft:rooted_dirt, minecraft:podzol, minecraft:muddy_mangrove_roots)
+        .award(excavation_group, 100);
+END
