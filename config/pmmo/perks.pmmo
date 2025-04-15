@@ -1,0 +1,10 @@
+WITH config(perks)
+    set(clear_all); // Clears all previous perks.
+    
+    set().event(SKILL_UP)
+        .skill(constitution)
+        .perk("pmmo:attribute")
+        .attribute("minecraft:generic.max_health")
+        .per_level(1.0)
+        .max_boost(5.0)
+END

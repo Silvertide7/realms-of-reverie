@@ -1,4 +1,0 @@
-item(iron_sword)
-    .vein_charge(1.5)
-    .vein_capacity(30)
-    .deal_damage(minecraft:player_attack).award(combat,10);
