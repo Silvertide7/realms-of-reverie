@@ -9,10 +9,16 @@ function applyModifier(itemDef as ItemDefinition, attribute as Attribute, value 
     itemDef.addAttributeModifier(attribute, modifier, slot);
 }
 
+// function applyMinecraftModifier(itemDef as ItemDefinition, attribute as Attribute, value as double, operation as AttributeOperation, slot as EquipmentSlotGroup) as void {
+//     val modifier = AttributeModifier.create(<resource:minecraft:base_attack_damage>, value, operation);
+//     itemDef.addAttributeModifier(attribute, modifier, slot);
+// }
+
+// applyModifier(<item:minecraft:iron_axe>, <attribute:minecraft:generic.armor>, 2.0, <constant:minecraft:attribute/operation:add_value>, <constant:minecraft:equipmentslot/group:hand>);
 applyModifier(<item:minecraft:netherite_chestplate>, <attribute:minecraft:generic.armor>, 2.0, <constant:minecraft:attribute/operation:add_value>, <constant:minecraft:equipmentslot/group:chest>);
 applyModifier(<item:minecraft:leather_boots>, <attribute:minecraft:generic.armor>, 0.2, <constant:minecraft:attribute/operation:add_multiplied_total>, <constant:minecraft:equipmentslot/group:head>);
 applyModifier(<item:minecraft:leather_leggings>, <attribute:minecraft:generic.armor>, 0.2, <constant:minecraft:attribute/operation:add_multiplied_base>, <constant:minecraft:equipmentslot/group:head>);
-applyMinecraftModifier(<item:minecraft:leather_chestplate>, <attribute:minecraft:generic.armor>, 0.2, <constant:minecraft:attribute/operation:add_multiplied_base>, <constant:minecraft:equipmentslot/group:head>);
+// applyMinecraftModifier(<item:minecraft:leather_chestplate>, <attribute:minecraft:generic.armor>, 0.2, <constant:minecraft:attribute/operation:add_multiplied_base>, <constant:minecraft:equipmentslot/group:head>);
 
 
 // AttributeUtil.addHeadAttr("minecraft:leather_helmet", AttributeUtil.armor, 20.0);
