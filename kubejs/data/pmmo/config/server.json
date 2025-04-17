@@ -64,20 +64,20 @@
   },
   "requirements": {
     "requirement_enabled": {
-      "TAME": false,
+      "TAME": true,
       "TRAVEL": false,
-      "USE": false,
+      "USE": true,
       "ENTITY_INTERACT": false,
       "USE_ENCHANTMENT": false,
       "PLACE": false,
-      "INTERACT": false,
-      "BREAK": false,
-      "WEAR": false,
-      "BREED": false,
-      "WEAPON": false,
+      "INTERACT": true,
+      "BREAK": true,
+      "WEAR": true,
+      "BREED": true,
+      "WEAPON": true,
       "KILL": false,
-      "RIDE": false,
-      "TOOL": false
+      "RIDE": true,
+      "TOOL": true
     }
   },
   "type": "SERVER"

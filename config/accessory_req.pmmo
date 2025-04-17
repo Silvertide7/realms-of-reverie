@@ -1,0 +1,5 @@
+WITH req(WEAR)
+    item(minecraft:iron_helmet).require(strength,9)
+END
+
+item(minecraft:iron_helmet).req(WEAR).require(strength,9)

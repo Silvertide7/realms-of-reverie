@@ -442,3 +442,11 @@ function setFoodBlockCraftXPAward(block as Block, xpAward as float) as void {
 function setFoodBlockSmeltXPAward(block as Block, xpAward as float) as void {
     setBlockXP(block, <constant:pmmo:eventtype:smelt>, {"cooking_group": (xpAward as long) as long?});
 }
+
+function setItemXP(item as IItemStack, eventType as EventType, xpMap as long?[string]) as void {
+    CTUtils.setXpAward(<constant:pmmo:objecttype:item>, item.registryName, eventType, xpMap);
+}
+
+function setBlockXP(block as Block, eventType as EventType, xpMap as long?[string]) as void {
+    CTUtils.setXpAward(<constant:pmmo:objecttype:block>, block.registryName, eventType, xpMap);
+}

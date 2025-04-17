@@ -1,8 +1,24 @@
-#noload
-import crafttweaker.api.item.IItemStack;
+import crafttweaker.api.entity.attribute.AttributeModifier;
+import crafttweaker.api.entity.attribute.AttributeOperation;
+import crafttweaker.api.entity.attribute.Attribute;
+import crafttweaker.api.entity.equipment.EquipmentSlotGroup;
+import crafttweaker.api.item.ItemDefinition;
 
-println("SANDBOX");
+function applyModifier(itemDef as ItemDefinition, attribute as Attribute, value as double, operation as AttributeOperation, slot as EquipmentSlotGroup) as void {
+    val modifier = AttributeModifier.create(<resource:reverie:modification>, value, operation);
+    itemDef.addAttributeModifier(attribute, modifier, slot);
+}
 
+applyModifier(<item:minecraft:netherite_chestplate>, <attribute:minecraft:generic.armor>, 2.0, <constant:minecraft:attribute/operation:add_value>, <constant:minecraft:equipmentslot/group:chest>);
+applyModifier(<item:minecraft:leather_boots>, <attribute:minecraft:generic.armor>, 0.2, <constant:minecraft:attribute/operation:add_multiplied_total>, <constant:minecraft:equipmentslot/group:head>);
+applyModifier(<item:minecraft:leather_leggings>, <attribute:minecraft:generic.armor>, 0.2, <constant:minecraft:attribute/operation:add_multiplied_base>, <constant:minecraft:equipmentslot/group:head>);
+applyMinecraftModifier(<item:minecraft:leather_chestplate>, <attribute:minecraft:generic.armor>, 0.2, <constant:minecraft:attribute/operation:add_multiplied_base>, <constant:minecraft:equipmentslot/group:head>);
+
+
+// AttributeUtil.addHeadAttr("minecraft:leather_helmet", AttributeUtil.armor, 20.0);
+
+// val modifier = AttributeModifier.create(<resource:reverie:modification>, value, operation);
+// itemDefinition.addAttributeModifier(attribute, modifier, slot);
 // for loot in loot.tables.getIds() {
 //     println(loot.commandString);
 // }
