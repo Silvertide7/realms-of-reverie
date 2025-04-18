@@ -4,12 +4,17 @@ import crafttweaker.api.entity.attribute.Attribute;
 import crafttweaker.api.entity.equipment.EquipmentSlotGroup;
 import crafttweaker.api.item.ItemDefinition;
 
-function applyModifier(itemDef as ItemDefinition, attribute as Attribute, value as double, operation as AttributeOperation, slot as EquipmentSlotGroup) as void {
-    val modifier = AttributeModifier.create(<resource:reverie:modification>, value, operation);
-    itemDef.addAttributeModifier(attribute, modifier, slot);
-}
+
+val attrHelper as AttributeModifierHelper = new AttributeModifierHelper();
+
+attrHelper.headSlot().applyModifier(<item:minecraft:netherite_helmet>, AttributeConstants.ARMOR, 0.5);
+
+// function applyModifier(itemDef as ItemDefinition, attribute as Attribute, value as double, operation as AttributeOperation, slot as EquipmentSlotGroup) as void {
+//     val modifier = AttributeModifier.create(<resource:reverie:modification>, value, operation);
+//     itemDef.addAttributeModifier(attribute, modifier, slot);
+// }
  
- applyModifier(<item:minecraft:netherite_chestplate>, <attribute:minecraft:generic.armor>, 2.0, <constant:minecraft:attribute/operation:add_value>, <constant:minecraft:equipmentslot/group:chest>);
+//  applyModifier(<item:minecraft:netherite_chestplate>, <attribute:minecraft:generic.armor>, 2.0, <constant:minecraft:attribute/operation:add_value>, <constant:minecraft:equipmentslot/group:chest>);
 
 // function applyModifier(itemDef as ItemDefinition, attribute as Attribute, value as double, operation as AttributeOperation, slot as EquipmentSlotGroup) as void {
 //     val modifier = AttributeModifier.create(<resource:reverie:modification>, value, operation);

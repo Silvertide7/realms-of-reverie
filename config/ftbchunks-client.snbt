@@ -133,27 +133,27 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:pig": true
-			"minecraft:squid": true
-			"minecraft:cow": true
-			"minecraft:cod": false
-			"minecraft:spider": true
 			"minecraft:witch": true
-			"minecraft:bee": true
-			"minecraft:creeper": true
 			"minecraft:chicken": true
-			"minecraft:skeleton": true
-			"minecraft:drowned": true
-			"minecraft:sheep": true
-			"minecraft:dolphin": true
-			"minecraft:frog": true
 			"minecraft:bat": true
-			"minecraft:glow_squid": true
-			"minecraft:pufferfish": false
 			"minecraft:zombie_villager": true
-			"minecraft:enderman": true
-			"minecraft:zombie": true
+			"minecraft:bee": true
+			"minecraft:dolphin": true
+			"minecraft:glow_squid": true
+			"minecraft:sheep": true
+			"minecraft:creeper": true
+			"minecraft:cow": true
 			"minecraft:tropical_fish": false
+			"minecraft:cod": false
+			"minecraft:squid": true
+			"minecraft:zombie": true
+			"minecraft:spider": true
+			"minecraft:frog": true
+			"minecraft:skeleton": true
+			"minecraft:pig": true
+			"minecraft:drowned": true
+			"minecraft:enderman": true
+			"minecraft:pufferfish": false
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
